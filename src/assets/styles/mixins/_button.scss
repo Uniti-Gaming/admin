@@ -1,0 +1,34 @@
+// пересмотреть что из этого нужное, а что можно вынести в компонент
+@mixin all__buttons {
+    color: $text-color;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+@mixin primary-button {
+    @include all__buttons;
+    background-color: $primary-color;
+    font: 18px "Manrope-bold";
+    transition: opacity 300ms;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+@mixin inactive-button {
+    @include all__buttons;
+    background-color: $panels-bg-color;
+}
+
+@mixin active-account {
+    @include all__buttons;
+    background-color: $active-account-tip-color;
+}
+
+//убрать либо в другой миксин либо в компонент
+@mixin panel {
+    background-color: $panels-bg-color;
+    border-radius: 15px;
+}
