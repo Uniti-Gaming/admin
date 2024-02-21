@@ -1,0 +1,28 @@
+.MessagesForKey {
+
+  padding: 14px 8px;
+
+  @include panel;
+  //height: 40px;
+  width: 580px;
+
+
+  h2 {
+    border-bottom: 1px solid $aside-delimiter-color;
+    padding-bottom: 10px;
+  }
+
+  textarea {
+    padding: 14px;
+    background-color: $panels-bg-color;
+    border: none;
+    color: $text-color;
+    caret-color: violet;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+
+}
