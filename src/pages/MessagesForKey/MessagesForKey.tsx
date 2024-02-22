@@ -10,7 +10,7 @@ const MessagesForKey = () => {
 
             {/*<div className={styles.message}>*/}
 
-            {/*<Headings title={'СООБЩЕНИЕ ДЛЯ КЛЮЧА PC'} size={2}/>*/}
+            {/*<Heading title={'СООБЩЕНИЕ ДЛЯ КЛЮЧА PC'} size={2}/>*/}
 
             {/*    <textarea cols={66} rows={10}/>*/}
             {/*</div>*/}

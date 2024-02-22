@@ -1,11 +1,11 @@
-import styles from './Headings.module.scss';
+import styles from './Heading.module.scss';
 
 type headingProps = {
     title: string,
     size: number,
 }
 
-const Headings = ({title, size}: headingProps) => {
+const Heading = ({title, size}: headingProps) => {
 
     function heading(text: string) {
         switch (size) {
@@ -32,4 +32,4 @@ const Headings = ({title, size}: headingProps) => {
         </>
     );
 };
-export default Headings;
+export default Heading;
