@@ -1,9 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
 
 import { Aside, Header } from '@components';
-import { OneUser, UserPanel } from '@pages';
+import { OneUser, UserPanel, MessagesForKey } from '@pages';
 
 import styles from './App.module.scss';
+// import  from '@/pages/MessagesForKey/MessagesForKey.tsx';
 
 function App() {
     return (
@@ -18,6 +19,9 @@ function App() {
                     <Route path='/users' element={<UserPanel />} />
                     {/* user должен быть динамическим роутом */}
                     <Route path='/user' element={<OneUser />} />
+
+                    <Route path='/messages' element={<MessagesForKey />} />
+
                 </Routes>
 
             </main>
