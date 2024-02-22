@@ -1,24 +1,25 @@
 import styles from './MessagesForKey.module.scss';
-import {Header_2} from '@components';
-import Header_3 from '@/components/Header_3/Header_3.tsx';
+import {Headings} from '@components';
 
 
 const MessagesForKey = () => {
     return (
         <div className={styles.MessagesForKey}>
 
-            <div className={styles.message}>
+            <Headings title={'СООБЩЕНИЕ ДЛЯ КЛЮЧА PC'} size={2}/>
 
-                <Header_2 title={'СООБЩЕНИЕ ДЛЯ КЛЮЧА PC'}/>
+            {/*<div className={styles.message}>*/}
 
-                <textarea cols={66} rows={10}/>
-            </div>
+            {/*<Headings title={'СООБЩЕНИЕ ДЛЯ КЛЮЧА PC'} size={2}/>*/}
 
-            <div className={styles.currentMessage}>
+            {/*    <textarea cols={66} rows={10}/>*/}
+            {/*</div>*/}
 
-                <Header_3 title={'ТЕКУЩЕЕ СООБЩЕНИЕ'}/>
+            {/*<div className={styles.currentMessage}>*/}
 
-            </div>
+            <Headings title={'ТЕКУЩЕЕ СООБЩЕНИЕ'} size={3}/>
+
+            {/*</div>*/}
 
         </div>
     );
