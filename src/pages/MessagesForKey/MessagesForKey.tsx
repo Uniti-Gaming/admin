@@ -4,23 +4,54 @@ import {Headings} from '@components';
 
 const MessagesForKey = () => {
     return (
-        <div className={styles.MessagesForKey}>
+        <div className={styles.messagesForKey}>
+            <div className={styles.messagesForKey__content}>
 
-            <Headings title={'СООБЩЕНИЕ ДЛЯ КЛЮЧА PC'} size={2}/>
+                <div className={styles.messagesForKey__newMessage}>
 
-            {/*<div className={styles.message}>*/}
+                    <Headings title={'СООБЩЕНИЕ ДЛЯ КЛЮЧА PC'} size={2}/>
 
-            {/*<Heading title={'СООБЩЕНИЕ ДЛЯ КЛЮЧА PC'} size={2}/>*/}
+                    <textarea cols={86} rows={4}/>
 
-            {/*    <textarea cols={66} rows={10}/>*/}
-            {/*</div>*/}
+                    <p>0/500</p>
+                </div>
 
-            {/*<div className={styles.currentMessage}>*/}
+                <div className={styles.messagesForKey__currMessage}>
 
-            <Headings title={'ТЕКУЩЕЕ СООБЩЕНИЕ'} size={3}/>
+                    <Headings title={'ТЕКУЩЕЕ СООБЩЕНИЕ'} size={3}/>
+                    
+                    {/* eslint-disable-next-line max-len */}
+                    <textarea cols={66} rows={6} readOnly={true} value="Приглашаем вас на ивент по игре CS:GО, который состоится 8 сентября в 20:00. Все подробности на нашем сайте в разделе “Новости”."/>
+                </div>
 
-            {/*</div>*/}
+                <div className={styles.buttonPanel}>
+                    <button>Сохранить изменения</button>
+                </div>
 
+
+                <div className={styles.messagesForKey__newMessage}>
+
+                    <Headings title={'СООБЩЕНИЕ ДЛЯ КЛЮЧА PC'} size={2}/>
+
+                    <textarea cols={86} rows={4}/>
+
+                    <p>0/500</p>
+                </div>
+
+                <div className={styles.messagesForKey__currMessage}>
+
+                    <Headings title={'СООБЩЕНИЕ ДЛЯ КЛЮЧА Steam'} size={3}/>
+
+                    {/* eslint-disable-next-line max-len */}
+                    <textarea cols={66} rows={6} readOnly={true} value='Приглашаем вас на ивент по игре CS:GО, который состоится 8 сентября в 20:00. Все подробности на нашем сайте в разделе “Новости”.'/>
+                </div>
+
+                <div className={styles.buttonPanel}>
+                    <button>Сохранить изменения</button>
+                </div>
+
+
+            </div>
         </div>
     );
 };
