@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 
 import { Aside, Header } from '@components';
-import { OneUser, UserPanel } from '@pages';
+import { OneUser, Statistics, UserPanel } from '@pages';
 
 import styles from './App.module.scss';
 
@@ -15,6 +15,7 @@ function App() {
                 <Aside />
 
                 <Routes>
+                    <Route path='/statistics' element={<Statistics />} />
                     <Route path='/users' element={<UserPanel />} />
                     {/* user должен быть динамическим роутом */}
                     <Route path='/user' element={<OneUser />} />

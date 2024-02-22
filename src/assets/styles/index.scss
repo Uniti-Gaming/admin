@@ -1,14 +1,10 @@
 @import '../fonts/fonts.scss';
 
-:root {
-  font-family: "Manrope", sans-serif;
-}
-
 body {
   background-color: $page-bg-color;
   color: $text-color;
   overflow-x: hidden;
-
+  font-family: "Manrope", sans-serif;
 }
 
 input {
