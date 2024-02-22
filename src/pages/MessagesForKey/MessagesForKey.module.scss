@@ -1,11 +1,23 @@
 .MessagesForKey {
 
-  padding: 14px 8px;
+  .message, .currentMessage {
 
-  @include panel;
-  //height: 40px;
-  width: 580px;
 
+    @include panel;
+    //width: 580px;
+
+
+
+
+  }
+
+  .message {
+    padding: 14px 8px;
+  }
+
+  .currentMessage {
+    padding: 23px 27px 22px;
+  }
 
   h2 {
     border-bottom: 1px solid $aside-delimiter-color;
