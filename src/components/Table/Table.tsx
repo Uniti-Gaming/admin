@@ -29,8 +29,8 @@ const Table = () => {
             <div className={styles.captionTable}>
                 <p>Игры</p>
                 <div className={styles.captionSearchPanel}>
-                    <img src={search} alt=""/>
-                    <input type="text"/>
+                    <img src={search} alt=''/>
+                    <input type='ext'/>
                 </div>
                 
             </div>
