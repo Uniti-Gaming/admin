@@ -11,7 +11,6 @@ type ItemProps = {
 }
 
 const Item: FC<ItemProps> = ({ text, path }) => {
-
     return (
         <NavLink to={path}>
             {text}
@@ -19,7 +18,6 @@ const Item: FC<ItemProps> = ({ text, path }) => {
         </NavLink>
     );
 };
-
 
 const Aside = () => {
     return (

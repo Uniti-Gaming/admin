@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 
 import { Aside, Header } from '@components';
-import { OneUser, Statistics, UserPanel } from '@pages';
+import { OneUser, UserPanel, MessagesForKey, UserPanel } from '@pages';
 
 import styles from './App.module.scss';
 
@@ -19,6 +19,9 @@ function App() {
                     <Route path='/users' element={<UserPanel />} />
                     {/* user должен быть динамическим роутом */}
                     <Route path='/user' element={<OneUser />} />
+
+                    <Route path='/messages' element={<MessagesForKey />} />
+
                 </Routes>
 
             </main>
