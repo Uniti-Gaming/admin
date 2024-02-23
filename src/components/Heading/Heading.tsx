@@ -1,12 +1,12 @@
-import React from 'react';
+// import {JSX} from 'react';
 
-type headingProps = {
+type HeadingProps = {
     title: string,
-    size: number,
+    size: number
 }
 
-const Heading = ({title, size}: headingProps) => {
-    const TagName = `h${size}`;
+const Heading = ({title, size}: HeadingProps) => {
+    const TagName = `h${size}` as keyof React.JSX.IntrinsicElements;
 
     return (
         <TagName>{title}</TagName>
