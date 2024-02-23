@@ -1,6 +1,8 @@
+import { Route, Routes } from 'react-router-dom';
+
 import styles from './Header.module.scss';
 import { logo, nick, bell } from '@images';
-
+import { routes } from '@data/routes';
 
 const Header = () => {
     return (
@@ -10,7 +12,12 @@ const Header = () => {
                 <img className={styles.logo} src={logo} alt='Unite logo' />
 
                 <div className={styles.header__addition}>
-                    <p>Управление пользователями</p>
+                    {/* Я не уверен что это правильный подход */}
+                    <Routes>
+                        {routes.map((route, index) => (
+                            <Route key={index} path={route.path} element={<p>{route.name}</p>} />
+                        ))}
+                    </Routes>
 
                     <div className={styles.buttons__panel}>
                         {/*<button>*/}

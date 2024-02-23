@@ -11,6 +11,7 @@
       "@components": [ "components/index.ts" ],
       "@pages": [ "pages/index.ts" ],
       "@images": [ "assets/images.ts" ],
+      "@data/*": [ "assets/data/*" ],
       "@styles/*": ["assets/styles/*"]
     },
 
