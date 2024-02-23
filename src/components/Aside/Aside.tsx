@@ -20,6 +20,8 @@ const Aside = () => {
 
                     <NavLink to='user'>Пользователь {<img src={shevron} alt='' />}</NavLink>
 
+                    <NavLink to='messages'>Сообщения для ключа {<img src={shevron} alt='' />}</NavLink>
+
                     {/* <li className={s.list__item}><a href="#">Управление пользователями <img src={shevron} alt=""/></a></li>*/}
                     {/*    <li className={s.list__item}><a href="#">Игры <img src={shevron} alt=""/></a></li>*/}
                     {/*    <li className={s.list__item}><a href="#">Редактировать курс <img src={shevron} alt=""/></a></li>*/}
