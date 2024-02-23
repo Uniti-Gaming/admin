@@ -12,7 +12,6 @@ type ItemProps = {
 }
 
 const Item: FC<ItemProps> = ({ text, path }) => {
-
     return (
         <NavLink
             className={({ isActive }) => classnames(styles.link, { [styles.active]: isActive })}
@@ -23,7 +22,6 @@ const Item: FC<ItemProps> = ({ text, path }) => {
         </NavLink>
     );
 };
-
 
 const Aside = () => {
     return (
