@@ -1,58 +1,35 @@
-import TableItem from '@/components/Table/TableItem/TableItem.tsx';
+import { FC } from 'react';
+
+import Row, { RowProps } from '@/components/Table/Row';
+
 import styles from './Table.module.scss';
-import {search} from '@images';
 
+type TableProps = {
+    children?: React.ReactNode | React.ReactNode[];
+};
 
-const data = [
-    {
-        name: 'Assassin\'s Creed Origins: Revenge of the Souls',
-        category: 'Бесплатно',
-        action: 'Изменить',
-    },
-    {
-        name: 'Assassin\'s Creed Origins: Revenge of the Souls',
-        category: 'Бесплатно',
-        action: 'Изменить',
-    },
-    {
-        name: 'Assassin\'s Creed Origins: Revenge of the Souls',
-        category: 'Бесплатно',
-        action: 'Изменить',
-    },
-];
+type TbodyProps = {
+    tbody: RowProps[];
+}
 
+const Thead: FC<RowProps> = (props) => {
+    return <thead className={styles.thead}><Row {...props} TagName='th' /></thead>;
+};
 
-const Table = () => {
+const Tbody: FC<TbodyProps> = ({ tbody }) => {
     return (
-        <div className={styles.gameTable}>
-
-            <div className={styles.captionTable}>
-                <p>Игры</p>
-                <div className={styles.captionSearchPanel}>
-                    <img src={search} alt=''/>
-                    <input type='ext'/>
-                </div>
-                
-            </div>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>№</th>
-                        <th>Название</th>
-                        <th>категория</th>
-                        <th>Действие</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        data.map((elem, index) => (
-                            <TableItem item={elem} index={index}/>))
-                    }
-                </tbody>
-            </table>
-        </div>
+        <tbody className={styles.tbody}>
+            {tbody.map((elem, index) => (
+                <Row key={index} {...elem} />
+            ))}
+        </tbody>
     );
 };
 
-export default Table;
+const Table: FC<TableProps> = ({ children }) => {
+    return (
+        <table className={styles.table}>{children}</table>
+    );
+};
+
+export { Table, Thead, Tbody };

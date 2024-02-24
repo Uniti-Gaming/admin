@@ -1,4 +1,4 @@
-.UserPanel {
+.panel {
   width: 100%;
 
   .userPanel__content {
@@ -12,7 +12,8 @@
 
       p {
         margin: 0;
-        font: 18px/15.9px "Manrope-semibold";
+        font-size: 18px;
+        line-height: normal;
       }
 
       .title__search {
@@ -167,4 +168,16 @@
       }
     }
   }
+}
+
+.email {
+  display: block;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 145%;
+  color: #7983bb;
+}
+
+.alignLeft {
+  text-align: left;
 }

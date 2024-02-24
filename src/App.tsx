@@ -11,7 +11,6 @@ function App() {
             <Header />
             <main className={styles.main}>
 
-
                 <Aside />
 
                 <Routes>
@@ -19,7 +18,7 @@ function App() {
                     <Route path='/users' element={<UserPanel />} />
                     {/* user должен быть динамическим роутом */}
                     <Route path='/user' element={<OneUser />} />
-                    {/* games должен быть динамическим роутом */}
+
                     <Route path='/games' element={<Table />} />
 
                     <Route path='/messages' element={<MessagesForKey />} />
