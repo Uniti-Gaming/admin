@@ -1,4 +1,3 @@
-
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -56,7 +55,6 @@ const data = {
         },
     ],
 };
-
 
 const Statistics = () => {
     return (
