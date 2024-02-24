@@ -14,13 +14,17 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
+    "chart.js": "^4.4.1",
+    "faker": "5.5.3",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.1",
     "react-router-dom": "^6.22.1"
   },
   "devDependencies": {
+    "@types/faker": "5.5.9",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
     "@typescript-eslint/eslint-plugin": "^6.21.0",

@@ -1,0 +1,27 @@
+.table {
+  width: 100%;
+}
+
+.cell {
+  border-bottom: 1px solid $aside-delimiter-color;
+  text-align: center;
+}
+
+th.cell {
+  border-top: 1px solid $aside-delimiter-color;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 145%;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #cfd3ec;
+  padding: 11px 16px;
+}
+
+td.cell {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #b6bee3;
+  padding: 9px 16px;
+}
