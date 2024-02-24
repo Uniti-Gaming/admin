@@ -14,7 +14,7 @@ function App() {
                 <Aside />
 
                 <Routes>
-                    <Route path='/statistics' element={<Statistics />} />
+                    <Route path='/' element={<Statistics />} />
                     <Route path='/users' element={<UserPanel />} />
                     {/* user должен быть динамическим роутом */}
                     <Route path='/user' element={<OneUser />} />

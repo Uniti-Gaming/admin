@@ -1,6 +1,6 @@
 export const routes = [
     {
-        path: '/statistics',
+        path: '/',
         name: 'Статистика',
     },
     {

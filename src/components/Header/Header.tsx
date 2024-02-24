@@ -15,7 +15,11 @@ const Header = () => {
                     {/* Я не уверен что это правильный подход */}
                     <Routes>
                         {routes.map((route, index) => (
-                            <Route key={index} path={route.path} element={<p>{route.name}</p>} />
+                            <Route
+                                key={index}
+                                path={route.path}
+                                element={<h1 className={styles.title}>{route.name}</h1>}
+                            />
                         ))}
                     </Routes>
 

@@ -1,6 +1,10 @@
 .Header {
   background-color: $panels-bg-color;
-  margin-bottom: 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 
   .header__content {
     max-width: $max-width;
@@ -34,6 +38,7 @@
           margin-right: 32px;
           padding: 23px 0;
         }
+
         img:last-of-type {
           width: 38px;
           height: 38px;
@@ -43,4 +48,11 @@
       }
     }
   }
+}
+
+.title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.01em;
 }
