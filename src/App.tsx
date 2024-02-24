@@ -3,7 +3,6 @@ import { Route, Routes } from 'react-router-dom';
 import {Aside, Header, Table} from '@components';
 import {OneUser, UserPanel, MessagesForKey, Statistics} from '@pages';
 
-
 import styles from './App.module.scss';
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
                     <Route path='/users' element={<UserPanel />} />
                     {/* user должен быть динамическим роутом */}
                     <Route path='/user' element={<OneUser />} />
-
                     {/* games должен быть динамическим роутом */}
                     <Route path='/games' element={<Table />} />
 

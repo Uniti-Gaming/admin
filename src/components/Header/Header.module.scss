@@ -6,7 +6,7 @@
     max-width: $max-width;
     margin: 0 auto;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: space-between;
 
     .logo {
@@ -22,7 +22,7 @@
       .buttons__panel {
         margin-left: auto;
         display: flex;
-        align-content: center;
+        align-items: center;
         justify-content: end;
         flex-wrap: wrap;
 

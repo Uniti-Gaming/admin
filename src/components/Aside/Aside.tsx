@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { NavLink } from 'react-router-dom';
+import classnames from 'classnames';
 
 import styles from './Aside.module.scss';
 import { shevron } from '@images';
@@ -12,7 +13,10 @@ type ItemProps = {
 
 const Item: FC<ItemProps> = ({ text, path }) => {
     return (
-        <NavLink to={path}>
+        <NavLink
+            className={({ isActive }) => classnames(styles.link, { [styles.active]: isActive })}
+            to={path}
+        >
             {text}
             <img src={shevron} alt='shevron' />
         </NavLink>
