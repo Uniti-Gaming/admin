@@ -4,13 +4,12 @@
     border: none;
     outline: none;
     border-radius: 10px;
-    font-family: "Manrope-regular", serif;
 }
 
 @mixin primary-button {
     @include all__buttons;
     background-color: $primary-color;
-    font: 18px "Manrope-bold";
+    font-size: 18px;
     transition: opacity 300ms;
 
     &:hover {

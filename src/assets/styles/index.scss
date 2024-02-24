@@ -5,6 +5,7 @@ body {
   color: $text-color;
   overflow-x: hidden;
   font-family: "Manrope", sans-serif;
+  margin-top: calc(#{$header-height} + 20px);
 }
 
 input {
