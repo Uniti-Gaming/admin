@@ -11,4 +11,8 @@ export const routes = [
         path: '/user',
         name: 'Пользователь',
     },
+    {
+        path: '/games',
+        name: 'Игры',
+    },
 ];
