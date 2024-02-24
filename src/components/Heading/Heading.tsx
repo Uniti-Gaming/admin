@@ -1,4 +1,3 @@
-// import {JSX} from 'react';
 
 type HeadingProps = {
     title: string,
@@ -7,6 +6,7 @@ type HeadingProps = {
 
 const Heading = ({title, size}: HeadingProps) => {
     const TagName = `h${size}` as keyof React.JSX.IntrinsicElements;
+
     return (
         <TagName>{title}</TagName>
     );
