@@ -50,12 +50,7 @@
         }
       }
 
-      .leftPanel__resetPassword_btn {
-        @include all__buttons;
-        @include inactive-button;
-        padding: 8px 24px;
-        font: 14px "Manrope-bold";
-      }
+
     }
 
     .oneUser__rightPanel {
@@ -68,12 +63,6 @@
         align-items: center;
         justify-content: space-between;
         font: 14px "Manrope-bold";
-
-        .rightPanel__statusTip {
-          @include active-account;
-          padding: 8px 38px;
-          background-color: $active-account-tip-color;
-        }
       }
 
       form {
@@ -143,22 +132,31 @@
         .button__panel {
           width: 100%;
           justify-content: right;
-
-          button {
-            @include primary-button;
-            margin-top: 35px;
-            padding: 8px 24px;
-            font: 14px "Manrope-bold";
-
-            &:first-of-type {
-              @include inactive-button;
-              margin-right: 6px;
-            }
-          }
+          margin-top: 35px;
         }
       }
-
     }
 
+  }
+}
+
+.submit {
+  @include button($primary-color);
+}
+
+.cancel {
+  @include button($search-bg-color);
+  margin-right: 6px;
+}
+
+.reset {
+  @include button($search-bg-color);
+}
+
+.status {
+  @include button($search-bg-color);
+
+  &.active {
+    background-color: $active-account-tip-color;
   }
 }

@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import styles from './OneUser.module.scss';
 // import { bonuses1 } from '@images';
 
@@ -28,13 +29,17 @@ const OneUser = () => {
                         <h2>Причина блокировки:</h2>
                         <p>Оскорбление администрации</p>
                     </div>
-                    <button className={styles.leftPanel__resetPassword_btn}>Сбросить пароль</button>
+                    <button className={styles.reset}>Сбросить пароль</button>
                 </div>
 
                 <div className={styles.oneUser__rightPanel}>
                     <div className={styles.rightPanel__accountStatus}>
                         <p>Статус аккаунта</p>
-                        <button className={styles.rightPanel__statusTip}>Активен</button>
+                        <button
+                            className={classNames(styles.status, styles.active)}
+                        >
+                            Активен
+                        </button>
                     </div>
 
                     <form action='#'>
@@ -92,8 +97,12 @@ const OneUser = () => {
 
                         {/* Здесь нужно добавить листбоксы для подтверждения почты и телефона*/}
                         <div className={styles.button__panel}>
-                            <button>Отмена</button>
-                            <button>Сохранить изменения</button>
+                            <button type='button' className={styles.cancel}>
+                                Отмена
+                            </button>
+                            <button type='submit' className={styles.submit}>
+                                Сохранить изменения
+                            </button>
                         </div>
 
                     </form>

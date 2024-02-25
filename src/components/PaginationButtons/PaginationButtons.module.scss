@@ -1,0 +1,23 @@
+.button {
+    @include button(rgba(134, 146, 208, 0.08), 10px 13px);
+    color: $table-header-color;
+    margin-right: 4px;
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+
+    &.current {
+        background-color: $primary-color;
+        color: $text-color;
+    }
+}
+
+.previous,
+.next {
+    padding-inline: 11px;
+
+    &.disabled {
+        color: $inactive-text-color;
+    }
+}

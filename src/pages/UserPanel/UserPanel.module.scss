@@ -27,94 +27,11 @@
         img {
           margin-right: 10px;
         }
-
-        input {
-          //background-color: transparent;
-          //outline: none;
-          //border: none;
-          //color: $text-color;
-
-          font: 14px "Manrope-semibold";
-        }
       }
     }
 
     .userPanel__data {
       padding-bottom: 100px;
-
-      table {
-        border-bottom: 1px solid $aside-delimiter-color;
-
-        font: 12px/18.3px "Manrope-regular";
-
-        thead {
-          text-align: left;
-          text-transform: uppercase;
-          font: 11px/16px "Manrope-medium";
-          color: $table-header-color;
-
-          tr {
-            th:nth-child(1) {
-              width: 205px;
-            }
-
-            th:nth-child(2) {
-              width: 130px;
-            }
-
-            th:nth-child(3) {
-              width: 145px;
-            }
-
-            th:nth-child(4) {
-              width: 185px;
-            }
-
-            th:nth-child(5) {
-              width: 150px;
-            }
-
-          }
-        }
-
-
-        tr {
-          border-top: 1px solid $aside-delimiter-color;
-          display: block;
-          padding: 10px 16px;
-
-          td {
-            p {
-              margin: 0;
-            }
-          }
-
-          td:nth-child(1) {
-            width: 250px;
-          }
-
-          td:nth-child(2) {
-            width: 200px;
-          }
-
-          td:nth-child(3) {
-            width: 200px;
-          }
-
-          td:nth-child(4) {
-            width: 300px;
-          }
-
-          td:nth-child(5) {
-            width: 200px;
-          }
-
-          td:nth-child(6) {
-            width: 180px;
-          }
-
-        }
-      }
     }
 
     .userPanel__footer {
@@ -129,43 +46,6 @@
         margin-bottom: 30px;
         color: $inactive-text-color;
       }
-
-      .userPAnel__paginator {
-        margin-right: 45px;
-
-        button {
-          @include inactive-button;
-          padding: 10px 12px;
-          margin-bottom: 30px;
-          cursor: pointer;
-          transition: opacity 300ms;
-
-          &:first-of-type {
-            padding: 10px 11px;
-          }
-
-          &:last-of-type {
-            padding: 10px 10px;
-          }
-
-          &:not(:last-of-type) {
-            margin-right: 4px;
-          }
-
-          &:hover {
-            opacity: 0.7;
-          }
-        }
-
-        .disableButton {
-          color: $inactive-text-color;
-          cursor: auto;
-        }
-
-        .activeButton {
-          background-color: $primary-color;
-        }
-      }
     }
   }
 }
@@ -175,9 +55,22 @@
   font-weight: 400;
   font-size: 11px;
   line-height: 145%;
-  color: #7983bb;
+  color: $inactive-text-color;
 }
 
 .alignLeft {
   text-align: left;
+}
+
+.counter {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: $inactive-text-color;
+  padding: 70px 20px 40px;
+}
+
+.pagination {
+  text-align: end;
+  padding: 15px 45px 0 0;
 }

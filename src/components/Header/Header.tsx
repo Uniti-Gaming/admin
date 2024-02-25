@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import styles from './Header.module.scss';
 import { logo, nick, bell } from '@images';
-import { routes } from '@data/routes';
+import { routes } from '@/core/routes';
 
 const Header = () => {
     return (

@@ -1,7 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
 
-import {Aside, Header, Table} from '@components';
-import {OneUser, UserPanel, MessagesForKey, Statistics} from '@pages';
+import { Aside, Header, Table } from '@components';
+import {
+    OneUser,
+    UserPanel,
+    MessagesForKey,
+    Statistics,
+    ExchangeRates,
+} from '@pages';
 
 import styles from './App.module.scss';
 
@@ -20,13 +26,13 @@ function App() {
                     <Route path='/user' element={<OneUser />} />
 
                     <Route path='/games' element={<Table />} />
+                    <Route path='/exchange-rates' element={<ExchangeRates />} />
 
                     <Route path='/messages' element={<MessagesForKey />} />
 
                 </Routes>
 
             </main>
-
         </>
     );
 }
