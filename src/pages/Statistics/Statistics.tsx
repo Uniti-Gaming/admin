@@ -9,10 +9,10 @@ import {
     Legend,
 } from 'chart.js';
 import faker from 'faker';
+import classNames from 'classnames';
 
 import Chart from './Chart';
 import styles from './Statistics.module.scss';
-import classNames from 'classnames';
 
 ChartJS.register(
     CategoryScale,
