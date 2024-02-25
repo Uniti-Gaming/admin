@@ -15,4 +15,12 @@ export const routes = [
         path: '/games',
         name: 'Игры',
     },
+    {
+        path: '/exchange-rates',
+        name: 'Редактировать курс',
+    },
+    {
+        path: '/messages',
+        name: 'Сообщения для ключа',
+    },
 ];

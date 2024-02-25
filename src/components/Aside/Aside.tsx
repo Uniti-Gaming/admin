@@ -4,11 +4,11 @@ import classnames from 'classnames';
 
 import styles from './Aside.module.scss';
 import { shevron } from '@images';
-import { routes } from '@data/routes';
+import { routes } from '@/core/routes';
 
 type ItemProps = {
-    text: string
-    path: string
+    text: string;
+    path: string;
 }
 
 const Item: FC<ItemProps> = ({ text, path }) => {
@@ -25,14 +25,14 @@ const Item: FC<ItemProps> = ({ text, path }) => {
 
 const Aside = () => {
     return (
-        <div className={styles.aside}>
+        <aside className={styles.aside}>
             <nav className={styles.aside__list}>
                 {routes.map((route, index) => (
                     <Item key={index} text={route.name} path={route.path} />
                 ))}
             </nav>
-            <button>Выход</button>
-        </div>
+            <button className={styles.button}>Выход</button>
+        </aside>
     );
 };
 
