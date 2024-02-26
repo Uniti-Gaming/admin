@@ -6,7 +6,7 @@ import {
     UserPanel,
     MessagesForKey,
     Statistics,
-    ExchangeRates,
+    ExchangeRates, EditGame,
 } from '@pages';
 
 import styles from './App.module.scss';
@@ -29,6 +29,8 @@ function App() {
                     <Route path='/exchange-rates' element={<ExchangeRates />} />
 
                     <Route path='/messages' element={<MessagesForKey />} />
+
+                    <Route path='/editgame' element={<EditGame />} />
 
                 </Routes>
 
