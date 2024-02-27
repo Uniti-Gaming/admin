@@ -13,6 +13,8 @@ const Donut = () => {
                 <label className={styles.label}  htmlFor='username'>Название</label>
                 <input className={styles.input} type='text'/>
 
+
+
                 <label className={styles.label}  htmlFor='game'>Игра</label>
                 <input className={styles.input} type='text'/>
 
