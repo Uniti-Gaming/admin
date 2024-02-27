@@ -1,5 +1,5 @@
 import styles from './Donut.module.scss';
-import {Headings} from '@components';
+import {Heading} from '@components';
 import classNames from 'classnames';
 
 
@@ -7,13 +7,11 @@ const Donut = () => {
     return (
         <div className={styles.donut}>
 
-            <Headings title='Донат' size={3}/>
+            <Heading title='Донат' size={3}/>
 
             <div className={styles.donutContent}>
-                <label className={styles.label}  htmlFor='username'>Название</label>
+                <label className={styles.label}>Название</label>
                 <input className={styles.input} type='text'/>
-
-
 
                 <label className={styles.label}  htmlFor='game'>Игра</label>
                 <input className={styles.input} type='text'/>

@@ -1,3 +1,4 @@
+
 .OneUser {
   width: 100%;
 
@@ -6,23 +7,23 @@
     padding: 16px 16px;
     display: flex;
 
-    h2, h3, p {
-      padding: 0;
-      margin: 0;
-    }
+    //h2, h3, p {
+    //  padding: 0;
+    //  margin: 0;
+    //}
 
     .oneUser__leftPanel {
       width: 250px;
       margin-right: 51px;
 
-      h2 {
-        font: 20px "Manrope-bold";
-      }
-
-      h3, p {
-        font: 16px "Manrope-regular";
-        opacity: 0.6;
-      }
+      //h2 {
+      //  font: 20px "Manrope-bold";
+      //}
+      //
+      //h3, p {
+      //  font: 16px "Manrope-regular";
+      //  opacity: 0.6;
+      //}
 
       .leftPanel__userName {
         margin-bottom: 30px;
@@ -44,10 +45,10 @@
         background-color: $additional-panel-bg-color;
         margin-bottom: 48px;
 
-        h2, p {
-          font-size: 15px;
-          line-height: 22.5px;
-        }
+        //h2, p {
+        //  font-size: 15px;
+        //  line-height: 22.5px;
+        //}
       }
 
 
