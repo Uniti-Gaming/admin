@@ -20,17 +20,17 @@ function App() {
                 <Aside/>
 
                 <Routes>
-                    <Route path="/" element={<Statistics/>}/>
-                    <Route path="/users" element={<UserPanel/>}/>
+                    <Route path='/' element={<Statistics/>}/>
+                    <Route path='/users' element={<UserPanel/>}/>
                     {/* user должен быть динамическим роутом */}
-                    <Route path="/user" element={<OneUser/>}/>
+                    <Route path='/user' element={<OneUser/>}/>
 
-                    <Route path="/games" element={<Table/>}/>
-                    <Route path="/exchange-rates" element={<ExchangeRates/>}/>
+                    <Route path='/games' element={<Table/>}/>
+                    <Route path='/exchange-rates' element={<ExchangeRates/>}/>
 
-                    <Route path="/messages" element={<MessagesForKey/>}/>
+                    <Route path='/messages' element={<MessagesForKey/>}/>
 
-                    <Route path="/editgame" element={<EditGame/>}/>
+                    <Route path='/editgame' element={<EditGame/>}/>
 
                 </Routes>
 
