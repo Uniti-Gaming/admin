@@ -40,13 +40,12 @@
 .deleteGameBtn,
 .cancelBtn,
 .saveGameBtn {
-  padding: 8px 24px;
-  @include button($additional-panel-bg-color);
+  @include button($additional-panel-bg-color, 8px 24px);
 }
 
 .saveGameBtn {
-  @include button();
   margin-left: 6px;
+  background-color: $primary-color;
 }
 
 

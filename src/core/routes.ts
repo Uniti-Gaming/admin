@@ -27,4 +27,8 @@ export const routes = [
         path: '/editgame',
         name: 'Редактировать игру',
     },
+    {
+        path: '/donut',
+        name: 'Донат',
+    },
 ];
