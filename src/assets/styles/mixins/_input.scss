@@ -1,0 +1,12 @@
+@mixin input {
+    background-color: $search-bg-color;
+    outline: none;
+    border: 1px solid transparent;
+    color: $text-color;
+    border-radius: 6px;
+    padding: 9px 24px;
+
+    &:focus {
+        border: 1px solid $text-color;
+    }
+}

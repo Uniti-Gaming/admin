@@ -1,0 +1,5 @@
+@mixin panel($padding: 20px) {
+    background-color: $panels-bg-color;
+    border-radius: 10px;
+    padding: $padding;
+}
