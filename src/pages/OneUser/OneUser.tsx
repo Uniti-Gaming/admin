@@ -1,6 +1,5 @@
 import classNames from 'classnames';
 import styles from './OneUser.module.scss';
-// import { bonuses1 } from '@images';
 
 
 const OneUser = () => {
@@ -11,8 +10,9 @@ const OneUser = () => {
 
                 <div className={styles.oneUser__leftPanel}>
                     <div className={styles.leftPanel__userName}>
-                        <h2>Sisyphus Ventures</h2>
-                        <h3>UG-45-qwer</h3>
+
+                        <h3>Sisyphus Ventures</h3>
+                        <h2>UG-45-qwer</h2>
                     </div>
 
                     <div className={styles.leftPanel__profileData}>
@@ -53,7 +53,7 @@ const OneUser = () => {
                         </div>
                         <div className={styles.id}>
                             <label htmlFor='id'>ID</label>
-                            <input className={styles.shortInput} value='UG-45-qwer' name='id' readOnly={true} />
+                            <input className={styles.shortInput} value='UG-45-qwer' name='id' readOnly={true}/>
                         </div>
                         <div>
                             <label htmlFor='phone'>Номер телефона</label>

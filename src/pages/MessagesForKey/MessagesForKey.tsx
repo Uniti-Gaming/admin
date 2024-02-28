@@ -1,5 +1,5 @@
 import styles from './MessagesForKey.module.scss';
-import {Headings} from '@components';
+import {Heading} from '@components';
 
 
 const MessagesForKey = () => {
@@ -9,7 +9,7 @@ const MessagesForKey = () => {
 
                 <div className={styles.messagesForKey__newMessage}>
 
-                    <Headings title={'СООБЩЕНИЕ ДЛЯ КЛЮЧА PC'} size={2}/>
+                    <Heading title={'СООБЩЕНИЕ ДЛЯ КЛЮЧА PC'} size={2}/>
 
                     <textarea cols={86} rows={4}/>
 
@@ -18,7 +18,7 @@ const MessagesForKey = () => {
 
                 <div className={styles.messagesForKey__currMessage}>
 
-                    <Headings title={'ТЕКУЩЕЕ СООБЩЕНИЕ'} size={3}/>
+                    <Heading title={'ТЕКУЩЕЕ СООБЩЕНИЕ'} size={3}/>
                     
                     {/* eslint-disable-next-line max-len */}
                     <textarea cols={66} rows={6} readOnly={true} value='Приглашаем вас на ивент по игре CS:GО, который состоится 8 сентября в 20:00. Все подробности на нашем сайте в разделе “Новости”.'/>
@@ -31,7 +31,7 @@ const MessagesForKey = () => {
 
                 <div className={styles.messagesForKey__newMessage}>
 
-                    <Headings title={'СООБЩЕНИЕ ДЛЯ КЛЮЧА Steam'} size={2}/>
+                    <Heading title={'СООБЩЕНИЕ ДЛЯ КЛЮЧА Steam'} size={2}/>
 
                     <textarea cols={86} rows={4}/>
 
@@ -40,7 +40,7 @@ const MessagesForKey = () => {
 
                 <div className={styles.messagesForKey__currMessage}>
 
-                    <Headings title={'ТЕКУЩЕЕ СООБЩЕНИЕ'} size={3}/>
+                    <Heading title={'ТЕКУЩЕЕ СООБЩЕНИЕ'} size={3}/>
 
                     {/* eslint-disable-next-line max-len */}
                     <textarea cols={66} rows={6} readOnly={true} value='Приглашаем вас на ивент по игре CS:GО, который состоится 8 сентября в 20:00. Все подробности на нашем сайте в разделе “Новости”.'/>
