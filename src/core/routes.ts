@@ -23,4 +23,12 @@ export const routes = [
         path: '/messages',
         name: 'Сообщения для ключа',
     },
+    {
+        path: '/editgame',
+        name: 'Редактировать игру',
+    },
+    {
+        path: '/donut',
+        name: 'Донат',
+    },
 ];
