@@ -1,6 +1,6 @@
 import {Route, Routes} from 'react-router-dom';
 
-import {Aside, Header, Table} from '@components';
+import { Aside, Header, Table } from '@components';
 import {
     OneUser,
     UserPanel,
@@ -33,7 +33,6 @@ function App() {
                     <Route path='/editgame' element={<EditGame/>}/>
 
                     <Route path='/donut' element={<Donut/>}/>
-
 
 
                 </Routes>
