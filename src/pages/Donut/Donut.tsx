@@ -41,9 +41,8 @@ const Donut = () => {
 
             <div className={styles.footerButtons}>
                 <button className={styles.button}>Отмена</button>
-                <button className={classNames(styles.button, styles.saveButton)}>Сохранить изменения</button>
+                <button className={classNames(styles.button, styles.save)}>Сохранить изменения</button>
             </div>
-
         </div>
     );
 };

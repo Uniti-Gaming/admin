@@ -36,7 +36,6 @@
 .button {
   @include button($additional-panel-bg-color, 9px 13px);
 
-
   &:not(:last-of-type) {
     margin-right: 6px;
   }
@@ -47,15 +46,12 @@
 }
 
 .footerButtons {
-
   display: flex;
   justify-content: right;
   margin: auto 38px 38px 0;
-
-
 }
 
-.saveButton {
+.save {
   background-color: $primary-color;
 }
 

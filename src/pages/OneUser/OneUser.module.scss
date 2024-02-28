@@ -1,163 +1,336 @@
 
-.OneUser {
+.oneUser {
+  @include panel;
+  padding: 16px 16px;
   width: 100%;
 
-  .oneUser__content {
-    @include panel;
-    padding: 16px 16px;
-    display: flex;
+  display: flex;
+}
 
-    //h2, h3, p {
-    //  padding: 0;
-    //  margin: 0;
-    //}
+.leftPanel {
+  width: 232px;
+  margin-right: 50px;
 
-    .oneUser__leftPanel {
-      width: 250px;
-      margin-right: 51px;
+  h2, h3, p { //reset margin
+    margin: 0;
+  }
 
-      //h2 {
-      //  font: 20px "Manrope-bold";
-      //}
-      //
-      //h3, p {
-      //  font: 16px "Manrope-regular";
-      //  opacity: 0.6;
-      //}
+  .userID {
+    color: $panels-additional-bg-color;
+    margin-bottom: 32px;
+  }
 
-      .leftPanel__userName {
-        margin-bottom: 30px;
-      }
+  h3 {
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
 
-      .leftPanel__profileData {
-        margin-bottom: 96px;
-      }
-
-      .leftPanel__comments {
-        margin-bottom: 34px;
-      }
-
-      .leftPanel__additionalPanel {
-        width: 193px;
-        height: 328px;
-        padding: 14px 10px;
-        border-radius: 10px;
-        background-color: $additional-panel-bg-color;
-        margin-bottom: 48px;
-
-        //h2, p {
-        //  font-size: 15px;
-        //  line-height: 22.5px;
-        //}
-      }
-
-
-    }
-
-    .oneUser__rightPanel {
-      width: 100%;
-
-      .rightPanel__accountStatus {
-        margin: 43px 0 37px 100px;
-
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font: 14px "Manrope-bold";
-      }
-
-      form {
-        width: 100%;
-
-        label {
-          width: 70px;
-          font: 13px "Manrope-semibold";
-          margin-right: 25px;
-
-        }
-
-        input {
-          font: 14px "Manrope-bold";
-          background-color: $additional-panel-bg-color;
-          border-radius: 10px;
-          padding: 8px 24px;
-          width: 80%;
-
-          &:read-only {
-            color: $inactive-text-color;
-            background-color: $additional-panel-bg-color
-          }
-        }
-
-        div {
-          display: flex;
-          align-items: center;
-          margin-bottom: 10px;
-        }
-
-        .shortInput {
-          padding: 9px 6px;
-          width: auto;
-          text-align: center;
-        }
-
-        .id,
-        .dateRegistration {
-          margin-bottom: 35px;
-        }
-
-        .bonuses {
-          flex-wrap: wrap;
-          justify-content: space-between;
-          margin-bottom: 50px;
-
-          input {
-            width: 150px;
-          }
-
-          div:first-of-type {
-            margin-right: 50px;
-          }
-        }
-
-        .limitsDate {
-          input {
-            width: 100px;
-
-            &:first-of-type {
-              margin-right: 50px;
-            }
-          }
-        }
-
-        .button__panel {
-          width: 100%;
-          justify-content: right;
-          margin-top: 35px;
-        }
-      }
-    }
-
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    color: $panels-additional-bg-color;
   }
 }
 
-.submit {
-  @include button($primary-color);
+.profileData {
+  margin-bottom: 96px;
 }
 
-.cancel {
-  @include button($search-bg-color);
-  margin-right: 6px;
+.profileComments {
+  margin-bottom: 32px;
 }
 
-.reset {
-  @include button($search-bg-color);
-}
+.blockReason {
+  background-color: $additional-panel-bg-color;
+  border-radius: 10px;
+  padding: 10px;
+  height: 232px;
 
-.status {
-  @include button($search-bg-color);
+  margin-bottom: 50px;
 
-  &.active {
-    background-color: $active-account-tip-color;
+  p {
+    color: $table-header-color;
   }
 }
+
+.button {
+  @include button($additional-panel-bg-color);
+}
+
+.rightPanel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.blockStatus {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+
+  margin-bottom: 38px;
+
+  p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+
+  .button {
+    @include button($block-account-tip-color, 8px 16px);
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 150px auto;
+  align-items: center;
+}
+
+.bonuses {
+  display: grid;
+  grid-template-columns: 150px 210px 150px 210px;
+  align-items: center;
+
+  .label:nth-of-type(3) {
+    text-align: right;
+    margin-right: 20px;
+  }
+}
+
+.labelInput {
+  position: relative;
+
+  input {
+    width: 30px;
+  }
+
+  img {
+    position: absolute;
+    top: 9px;
+    right: 80px;
+  }
+}
+
+.balance:after {
+  content: 'TMT';
+}
+
+.balls:after {
+  content: 'UG';
+}
+
+.tickets:after {
+  content: 'Ticket';
+}
+
+.exprdate {
+  .input:first-of-type {
+    margin-right: 10px;
+  }
+
+}
+
+
+.label {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin-bottom:  10px;
+}
+
+.input {
+  padding: 8px 24px;
+  background-color: $additional-panel-bg-color;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.input[readonly] {
+  opacity: 0.3;
+}
+
+.short {
+  width: 120px;
+}
+
+.footerButtons {
+  display: flex;
+  justify-content: right;
+  margin: auto 38px 38px 0;
+  gap: 8px;
+}
+
+.save {
+  background-color: $primary-color;
+}
+
+
+
+
+//
+//.OneUser {
+//  width: 100%;
+//
+//  .oneUser__content {
+//    @include panel;
+//    padding: 16px 16px;
+//    display: flex;
+//
+//    //h2, h3, p {
+//    //  paddiSng: 0;
+//    //  margin: 0;
+//    //}
+//
+//    .oneUser__leftPanel {
+//      width: 250px;
+//      margin-right: 51px;
+//
+//      //h2 {
+//      //  font: 20px "Manrope-bold";
+//      //}
+//      //
+//      //h3, p {
+//      //  font: 16px "Manrope-regular";
+//      //  opacity: 0.6;
+//      //}
+//
+//      .leftPanel__userName {
+//        margin-bottom: 30px;
+//      }
+//
+//      .leftPanel__profileData {
+//        margin-bottom: 96px;
+//      }
+//
+//      .leftPanel__comments {
+//        margin-bottom: 34px;
+//      }
+//
+//      .leftPanel__additionalPanel {
+//        width: 193px;
+//        height: 328px;
+//        padding: 14px 10px;
+//        border-radius: 10px;
+//        background-color: $additional-panel-bg-color;
+//        margin-bottom: 48px;
+//
+//        //h2, p {
+//        //  font-size: 15px;
+//        //  line-height: 22.5px;
+//        //}
+//      }
+//
+//
+//    }
+//
+//    .oneUser__rightPanel {
+//      width: 100%;
+//
+//      .rightPanel__accountStatus {
+//        margin: 43px 0 37px 100px;
+//
+//        display: flex;
+//        align-items: center;
+//        justify-content: space-between;
+//        font: 14px "Manrope-bold";
+//      }
+//
+//      form {
+//        width: 100%;
+//
+//        label {
+//          width: 70px;
+//          font: 13px "Manrope-semibold";
+//          margin-right: 25px;
+//
+//        }
+//
+//        input {
+//          font: 14px "Manrope-bold";
+//          background-color: $additional-panel-bg-color;
+//          border-radius: 10px;
+//          padding: 8px 24px;
+//          width: 80%;
+//
+//          &:read-only {
+//            color: $inactive-text-color;
+//            background-color: $additional-panel-bg-color
+//          }
+//        }
+//
+//        div {
+//          display: flex;
+//          align-items: center;
+//          margin-bottom: 10px;
+//        }
+//
+//        .shortInput {
+//          padding: 9px 6px;
+//          width: auto;
+//          text-align: center;
+//        }
+//
+//        .id,
+//        .dateRegistration {
+//          margin-bottom: 35px;
+//        }
+//
+//        .bonuses {
+//          flex-wrap: wrap;
+//          justify-content: space-between;
+//          margin-bottom: 50px;
+//
+//          input {
+//            width: 150px;
+//          }
+//
+//          div:first-of-type {
+//            margin-right: 50px;
+//          }
+//        }
+//
+//        .limitsDate {
+//          input {
+//            width: 100px;
+//
+//            &:first-of-type {
+//              margin-right: 50px;
+//            }
+//          }
+//        }
+//
+//        .button__panel {
+//          width: 100%;
+//          justify-content: right;
+//          margin-top: 35px;
+//        }
+//      }
+//    }
+//
+//  }
+//}
+//
+//.submit {
+//  @include button($primary-color);
+//}
+//
+//.cancel {
+//  @include button($search-bg-color);
+//  margin-right: 6px;
+//}
+//
+//.reset {
+//  @include button($search-bg-color);
+//}
+//
+//.status {
+//  @include button($search-bg-color);
+//
+//  &.active {
+//    background-color: $active-account-tip-color;
+//  }
+//}
