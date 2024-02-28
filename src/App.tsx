@@ -10,6 +10,7 @@ import {
 } from '@pages';
 
 import styles from './App.module.scss';
+import EditCard from '@/pages/EditCard/EditCard.tsx';
 
 function App() {
     return (
@@ -34,6 +35,7 @@ function App() {
 
                     <Route path='/donut' element={<Donut/>}/>
 
+                    <Route path='/editcard' element={<EditCard/>}/>
 
 
                 </Routes>

@@ -1,0 +1,55 @@
+.editCard {
+  display: flex;
+  flex-direction: column;
+
+  @include panel;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 150px auto;
+  align-items: center;
+}
+
+.additional {
+  display: grid;
+  grid-template-columns: 150px 360px 150px auto;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin-bottom:  10px;
+}
+
+.input {
+  padding: 8px 24px;
+  background-color: $additional-panel-bg-color;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.labelInput {
+  position: relative;
+
+  input {
+    width: 30px;
+    height: 20px;
+  }
+
+  img {
+    position: absolute;
+    top: 9px;
+    right: 80px;
+  }
+}
+
+.balls:after {
+  content: 'UG';
+}
