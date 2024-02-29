@@ -34,15 +34,19 @@ const EditCard = () => {
 
                 <div className={styles.additional}>
                     <label className={styles.label} htmlFor='descr'>Описание</label>
-                    <textarea name='descr' id='descr' cols='30' rows='10'/>
+                    <textarea name='descr' id='descr'/>
 
                     <label className={styles.label} htmlFor='price'>Цена</label>
                     <label className={classNames(styles.input, styles.labelInput, styles.balls)}>
-                        <input type='text' name='price'/>
+                        <input className={styles.price} type='text' name='price'/>
                         <img src={balls1} alt=''/>
                     </label>
                 </div>
 
+                <div className={styles.footerButtons}>
+                    <button className={styles.button}>Отмена</button>
+                    <button className={classNames(styles.button, styles.save)}>Сохранить изменения</button>
+                </div>
             </form>
 
         </div>
