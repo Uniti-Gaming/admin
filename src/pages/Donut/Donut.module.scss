@@ -9,7 +9,7 @@
   flex-direction: column;
 }
 
-.donutContent {
+.сontent {
   display: grid;
   grid-template-columns: 150px auto;
   align-items: center;
@@ -45,7 +45,7 @@
   background-color: $pending-button-bg-color;
 }
 
-.footerButtons {
+.footer {
   display: flex;
   justify-content: right;
   margin: auto 38px 38px 0;
