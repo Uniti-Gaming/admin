@@ -9,7 +9,7 @@ const Donut = () => {
 
             <Heading title='Донат' size={3}/>
 
-            <div className={styles.сontent}>
+            <div className={styles.content}>
                 <label className={styles.label} htmlFor='name'>Название</label>
                 <input className={styles.input} name='name' type='text'/>
 
