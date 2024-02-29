@@ -23,10 +23,10 @@ const EditGame = () => {
                     </select>
                 </div>
 
-                <div className={styles.footer}>
+                <div className={styles.buttonsPanel}>
                     <button className={styles.button}>Удалить игру</button>
 
-                    <div>
+                    <div className={styles.additionalButtons}>
                         <button className={styles.button}>Отмена</button>
                         <button className={classNames(styles.button, styles.save)}>Сохранить изменения</button>
                     </div>
