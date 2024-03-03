@@ -35,4 +35,8 @@ export const routes = [
         path: '/editcard',
         name: 'Редактировать карточку',
     },
+    {
+        path: '/editaccountoperator',
+        name: 'Редактировать аккаунт оператора',
+    },
 ];

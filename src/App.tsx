@@ -6,11 +6,14 @@ import {
     UserPanel,
     MessagesForKey,
     Statistics,
-    ExchangeRates, EditGame, Donut,
+    ExchangeRates,
+    EditGame,
+    Donut,
+    EditCard,
+    EditAccountOperator,
 } from '@pages';
 
 import styles from './App.module.scss';
-import EditCard from '@/pages/EditCard/EditCard.tsx';
 
 function App() {
     return (
@@ -23,10 +26,12 @@ function App() {
                 <Routes>
                     <Route path='/' element={<Statistics/>}/>
                     <Route path='/users' element={<UserPanel/>}/>
+
                     {/* user должен быть динамическим роутом */}
                     <Route path='/user' element={<OneUser/>}/>
 
                     <Route path='/games' element={<Table/>}/>
+
                     <Route path='/exchange-rates' element={<ExchangeRates/>}/>
 
                     <Route path='/messages' element={<MessagesForKey/>}/>
@@ -37,6 +42,7 @@ function App() {
 
                     <Route path='/editcard' element={<EditCard/>}/>
 
+                    <Route path='/editaccountoperator' element={<EditAccountOperator/>}/>
 
                 </Routes>
 

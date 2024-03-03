@@ -1,4 +1,4 @@
-.editCard {
+.editAccountOperator {
   display: flex;
   flex-direction: column;
 
@@ -14,7 +14,7 @@
 }
 
 form {
-  height: 750px;
+  height: 550px;
   width: 100%;
 }
 
@@ -91,13 +91,41 @@ form {
   }
 }
 
-.footerButtons {
+.buttonsPanel {
   display: flex;
-  justify-content: right;
-  margin: auto 38px 38px 0;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto 38px 38px 38px;
+}
 
+.button {
+  @include button($additional-panel-bg-color);
 }
 
 .save {
-  background-color: $primary-color;
+  margin-left: 6px;
+  @include button;
+}
+
+.short {
+  width: 120px;
+}
+
+.wrapperShowPass {
+  position: relative;
+  width: 250px;
+
+  .showPass {
+    padding: 5px;
+    background-color: $search-bg-color;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 30px;
+
+    img {
+      width: 19px;
+      height: 19px;
+    }
+  }
 }
