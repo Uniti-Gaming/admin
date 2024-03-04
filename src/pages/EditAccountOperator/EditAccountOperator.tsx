@@ -1,6 +1,7 @@
 import styles from './EditAccountOperator.module.scss';
 import {Heading} from '@components';
 import classNames from 'classnames';
+import {showpass} from '@images';
 
 
 const EditAccountOperator = () => {
@@ -28,7 +29,7 @@ const EditAccountOperator = () => {
                     <label htmlFor='password' className={styles.wrapperShowPass}>
                         <input className={styles.input} type='password' name='password'/>
                         <button className={styles.showPass}>
-                            <img src='../../assets/icons/showpassword.svg' alt=''/>
+                            <img src={showpass} alt=''/>
                         </button>
                     </label>
 
