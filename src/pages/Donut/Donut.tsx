@@ -9,7 +9,7 @@ const Donut = () => {
 
             <Heading title='Донат' size={3}/>
 
-            <div className={styles.content}>
+            <form className={styles.content}>
                 <label className={styles.label} htmlFor='name'>Название</label>
                 <input className={styles.input} name='name' type='text'/>
 
@@ -37,7 +37,7 @@ const Donut = () => {
                     <button className={classNames(styles.button, styles.pending)}>В обработке</button>
                     <button className={styles.button}>Оплачен</button>
                 </div>
-            </div>
+            </form>
 
             <div className={styles.footer}>
                 <button className={styles.button}>Отмена</button>

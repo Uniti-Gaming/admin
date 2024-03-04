@@ -38,72 +38,72 @@ const OneUser = () => {
                     <button className={styles.button}>Заблокирован</button>
                 </div>
 
-                <form action="#">
+                <form action='#'>
                     <div className={styles.grid}>
-                        <label className={styles.label} htmlFor="name">Имя</label>
-                        <input className={styles.input} type="text" name="name"/>
+                        <label className={styles.label} htmlFor='name'>Имя</label>
+                        <input className={styles.input} type='text' name='name'/>
 
-                        <label className={styles.label} htmlFor="email">Email</label>
-                        <input className={styles.input} type="text" name="email"/>
+                        <label className={styles.label} htmlFor='email'>Email</label>
+                        <input className={styles.input} type='text' name='email'/>
 
-                        <label className={styles.label} htmlFor="id">ID</label>
+                        <label className={styles.label} htmlFor='id'>ID</label>
                         {/* eslint-disable-next-line max-len */}
-                        <input className={classNames(styles.input, styles.short)} type="text" name="id"  readOnly={true}/>
+                        <input className={classNames(styles.input, styles.short)} type='text' name='id'  readOnly={true}/>
 
-                        <label className={styles.label} htmlFor="phone">Номер телефона</label>
-                        <input className={styles.input} type="text" name="phone"/>
+                        <label className={styles.label} htmlFor='phone'>Номер телефона</label>
+                        <input className={styles.input} type='text' name='phone'/>
 
-                        <label className={styles.label} htmlFor="regdate">Дата регистрации</label>
-                        <input className={styles.input} type="text" name="regdate" readOnly={true}/>
+                        <label className={styles.label} htmlFor='regdate'>Дата регистрации</label>
+                        <input className={styles.input} type='text' name='regdate' readOnly={true}/>
                     </div>
 
                     <div className={styles.bonuses}>
-                        <label className={styles.label} htmlFor="balance">Баланс</label>
+                        <label className={styles.label} htmlFor='balance'>Баланс</label>
                         <label className={classNames(styles.input, styles.labelInput, styles.balance)}>
-                            <input type="text" name="balance"/>
-                            <img src={bonuses1} alt=""/>
+                            <input type='text' name='balance'/>
+                            <img src={bonuses1} alt=''/>
                         </label>
 
-                        <label className={styles.label} htmlFor="balls">Баллы</label>
+                        <label className={styles.label} htmlFor='balls'>Баллы</label>
                         <label className={classNames(styles.input, styles.labelInput, styles.balls)}>
-                            <input type="text" name="balls"/>
-                            <img src={balls1} alt=""/>
+                            <input type='text' name='balls'/>
+                            <img src={balls1} alt=''/>
                         </label>
 
-                        <label className={styles.label} htmlFor="tickets">Билеты</label>
+                        <label className={styles.label} htmlFor='tickets'>Билеты</label>
                         <label className={classNames(styles.input, styles.labelInput, styles.tickets)}>
-                            <input type="text" name="tickets"/>
-                            <img src={tickets1} alt=""/>
+                            <input type='text' name='tickets'/>
+                            <img src={tickets1} alt=''/>
                         </label>
                     </div>
 
                     <div className={styles.grid}>
-                        <label className={styles.label} htmlFor="lang">Язык</label>
-                        <input className={styles.input} type="text" name="lang" readOnly={true}/>
+                        <label className={styles.label} htmlFor='lang'>Язык</label>
+                        <input className={styles.input} type='text' name='lang' readOnly={true}/>
 
-                        <label className={styles.label} htmlFor="tariff">Тариф</label>
-                        <input className={styles.input} type="text" name="tariff" readOnly={true}/>
+                        <label className={styles.label} htmlFor='tariff'>Тариф</label>
+                        <input className={styles.input} type='text' name='tariff' readOnly={true}/>
 
-                        <label className={styles.label} htmlFor="expdate">Срок действия</label>
+                        <label className={styles.label} htmlFor='expdate'>Срок действия</label>
                         <div className={styles.exprdate}>
                             {/* eslint-disable-next-line max-len */}
-                            <input className={classNames(styles.input, styles.short)} type="text" name="expdate" readOnly={true}/>
+                            <input className={classNames(styles.input, styles.short)} type='text' name='expdate' readOnly={true}/>
                             {/* eslint-disable-next-line max-len */}
-                            <input className={classNames(styles.input, styles.short)} type="text" name="expdate" readOnly={true}/>
+                            <input className={classNames(styles.input, styles.short)} type='text' name='expdate' readOnly={true}/>
                         </div>
                     </div>
 
                     <div className={styles.bonuses}>
-                        <label className={styles.label} htmlFor="trustPhone">Номер подтверждён</label>
-                        <select name="trustPhone">
-                            <option value="yes">Да</option>
-                            <option value="no">Нет</option>
+                        <label className={styles.label} htmlFor='trustPhone'>Номер подтверждён</label>
+                        <select name='trustPhone'>
+                            <option value='yes'>Да</option>
+                            <option value='no'>Нет</option>
                         </select>
 
-                        <label className={styles.label} htmlFor="trustMail">Почта подтверждена</label>
-                        <select name="trustMail">
-                            <option value="yes">Да</option>
-                            <option value="no">Нет</option>
+                        <label className={styles.label} htmlFor='trustMail'>Почта подтверждена</label>
+                        <select name='trustMail'>
+                            <option value='yes'>Да</option>
+                            <option value='no'>Нет</option>
                         </select>
                     </div>
                 </form>

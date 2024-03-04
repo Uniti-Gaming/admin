@@ -10,7 +10,7 @@ import {
     EditGame,
     Donut,
     EditCard,
-    EditAccountOperator,
+    EditAccountOperator, PromoGenerator,
 } from '@pages';
 
 import styles from './App.module.scss';
@@ -43,6 +43,8 @@ function App() {
                     <Route path='/editcard' element={<EditCard/>}/>
 
                     <Route path='/editaccountoperator' element={<EditAccountOperator/>}/>
+
+                    <Route path='/generatepromo' element={<PromoGenerator/>}/>
 
                 </Routes>
 
