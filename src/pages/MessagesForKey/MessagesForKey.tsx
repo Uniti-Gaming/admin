@@ -47,9 +47,8 @@ const MessagesForKey = () => {
                 </div>
 
                 <div className={styles.buttonPanel}>
-                    <button>Сохранить изменения</button>
+                    <button type='submit'> Сохранить изменения</button>
                 </div>
-
 
             </div>
         </div>

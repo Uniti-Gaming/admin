@@ -1,21 +1,20 @@
 .editCard {
-  display: flex;
-  flex-direction: column;
-
   @include panel;
   width: 100%;
   padding: 0 16px;
+  height: 900px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .content {
   display: grid;
   grid-template-columns: 150px auto;
+  grid-template-rows: repeat(6, 50px);
   align-items: center;
-}
+  margin-top: 36px;
 
-form {
-  height: 750px;
-  width: 100%;
 }
 
 .additional {
@@ -23,10 +22,10 @@ form {
   grid-template-columns: 150px auto 150px 238px;
 
   .label {
+    @include label;
     margin-top: 10px;
 
     &:nth-child(3){
-
       margin-left: 80px;
     }
   }
@@ -48,28 +47,28 @@ form {
 }
 
 .label {
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: -0.01em;
+  @include label;
   margin-bottom: 10px;
 }
 
 .input {
-  padding: 8px 24px;
-  background-color: $additional-panel-bg-color;
+  @include input;
   margin-bottom: 10px;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: -0.01em;
 }
 
 .labelInput {
   position: relative;
 
   input {
+    position: absolute;
+    top: 7px;
+    left: 40px;
     width: 30px;
     height: 20px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: $text-color;
   }
 
   img {
@@ -81,21 +80,21 @@ form {
 
 .balls:after {
   content: 'UG';
+  position: absolute;
+  right: 120px;
+  top: 10px;
 }
 
 .button {
-  @include button($additional-panel-bg-color, 9px 13px);
+  @include button($additional-panel-bg-color);
 
   &:not(:last-of-type) {
     margin-right: 6px;
   }
 }
 
-.footerButtons {
-  display: flex;
-  justify-content: right;
-  margin: auto 38px 38px 0;
-
+.footer {
+  @include footer;
 }
 
 .save {

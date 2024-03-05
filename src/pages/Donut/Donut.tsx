@@ -11,37 +11,37 @@ const Donut = () => {
 
             <form className={styles.content}>
                 <label className={styles.label} htmlFor='name'>Название</label>
-                <input className={styles.input} name='name' type='text'/>
+                <input className={styles.input} name='name' id='name' type='text'/>
 
                 <label className={styles.label} htmlFor='game'>Игра</label>
-                <input className={styles.input} name='game' type='text'/>
+                <input className={styles.input} name='game' id='game' type='text'/>
 
                 <label className={styles.label} htmlFor='timeLabel'>Отметка</label>
-                <input className={styles.input} name='timeLabel' type='text'/>
+                <input className={styles.input} name='timeLabel' id='timeLable' type='text'/>
 
                 <label className={styles.label} htmlFor='user'>Пользователь</label>
-                <input className={styles.input} name='user' type='text'/>
+                <input className={styles.input} name='user' id='user' type='text'/>
 
                 <label className={styles.label} htmlFor='userID'>Пользователя</label>
-                <input className={styles.input} name='userID' type='text'/>
+                <input className={styles.input} name='userID' id='userID' type='text'/>
 
                 <label className={styles.label} htmlFor='userNick'>Никнейм в игре</label>
-                <input className={styles.input} name='userNick' type='text'/>
+                <input className={styles.input} name='userNick' id='userNick' type='text'/>
 
                 <label className={styles.label} htmlFor='totalMoney'>Сумма</label>
-                <input className={styles.input} name='totalMoney' type='text'/>
+                <input className={styles.input} name='totalMoney' id='totalManey' type='text'/>
 
                 <label className={styles.label}>Изменить статус</label>
                 <div className={styles.buttons} >
-                    <button className={styles.button}>Неудачно</button>
-                    <button className={classNames(styles.button, styles.pending)}>В обработке</button>
-                    <button className={styles.button}>Оплачен</button>
+                    <button type='button' className={styles.button}>Неудачно</button>
+                    <button type='button' className={classNames(styles.button, styles.pending)}>В обработке</button>
+                    <button type='button' className={styles.button}>Оплачен</button>
                 </div>
             </form>
 
             <div className={styles.footer}>
-                <button className={styles.button}>Отмена</button>
-                <button className={classNames(styles.button, styles.save)}>Сохранить изменения</button>
+                <button type='button' className={styles.button}>Отмена</button>
+                <button type='submit' className={classNames(styles.button, styles.save)}>Сохранить изменения</button>
             </div>
         </div>
     );

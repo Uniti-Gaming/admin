@@ -5,6 +5,8 @@
   width: 100%;
 
   display: flex;
+
+
 }
 
 .leftPanel {
@@ -54,7 +56,7 @@
 }
 
 .button {
-  @include button($additional-panel-bg-color);
+  @include button;
 }
 
 .rightPanel {
@@ -84,12 +86,14 @@
 .grid {
   display: grid;
   grid-template-columns: 150px auto;
+  grid-template-rows: repeat(5, 50px);
   align-items: center;
 }
 
 .bonuses {
   display: grid;
   grid-template-columns: 150px 210px 150px 210px;
+  grid-template-rows: repeat(2, 50px);
   align-items: center;
 
   .label:nth-of-type(3) {
@@ -98,10 +102,18 @@
   }
 }
 
+.additionalGrid {
+  grid-template-rows: repeat(3, 50px);
+}
+
 .labelInput {
   position: relative;
 
   input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: $text-color;
     width: 30px;
   }
 
@@ -128,25 +140,16 @@
   .input:first-of-type {
     margin-right: 10px;
   }
-
 }
 
-
 .label {
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: -0.01em;
-  margin-bottom:  10px;
+  @include label;
+  margin-bottom: 10px;
 }
 
 .input {
-  padding: 8px 24px;
-  background-color: $additional-panel-bg-color;
+  @include input;
   margin-bottom: 10px;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: -0.01em;
 }
 
 .input[readonly] {
@@ -157,18 +160,15 @@
   width: 120px;
 }
 
-.footerButtons {
-  display: flex;
-  justify-content: right;
-  margin: auto 38px 38px 0;
-  gap: 8px;
+.footer {
+  @include footer;
 }
 
 .save {
+  margin-left: 6px;
+  @include button;
   background-color: $primary-color;
 }
-
-
 
 
 //

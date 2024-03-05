@@ -1,7 +1,7 @@
 
 type HeadingProps = {
     title: string,
-    size: number,
+    size: number
 }
 
 const Heading = ({title, size}: HeadingProps) => {

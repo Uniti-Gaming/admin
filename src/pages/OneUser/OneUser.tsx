@@ -41,76 +41,77 @@ const OneUser = () => {
                 <form action='#'>
                     <div className={styles.grid}>
                         <label className={styles.label} htmlFor='name'>Имя</label>
-                        <input className={styles.input} type='text' name='name'/>
+                        <input className={styles.input} type='text' id='name' name='name'/>
 
                         <label className={styles.label} htmlFor='email'>Email</label>
-                        <input className={styles.input} type='text' name='email'/>
+                        <input className={styles.input} type='text' id='email' name='email'/>
 
                         <label className={styles.label} htmlFor='id'>ID</label>
                         {/* eslint-disable-next-line max-len */}
-                        <input className={classNames(styles.input, styles.short)} type='text' name='id'  readOnly={true}/>
+                        <input className={classNames(styles.input, styles.short)} type='text' id='text' name='id' readOnly={true}/>
 
                         <label className={styles.label} htmlFor='phone'>Номер телефона</label>
-                        <input className={styles.input} type='text' name='phone'/>
+                        <input className={styles.input} type='text' id='phone' name='phone'/>
 
                         <label className={styles.label} htmlFor='regdate'>Дата регистрации</label>
-                        <input className={styles.input} type='text' name='regdate' readOnly={true}/>
+                        <input className={styles.input} type='text' id='regdate' name='regdate' readOnly={true}/>
                     </div>
 
                     <div className={styles.bonuses}>
                         <label className={styles.label} htmlFor='balance'>Баланс</label>
                         <label className={classNames(styles.input, styles.labelInput, styles.balance)}>
-                            <input type='text' name='balance'/>
+                            <input type='text' name='balance' id='balance'/>
                             <img src={bonuses1} alt=''/>
                         </label>
 
                         <label className={styles.label} htmlFor='balls'>Баллы</label>
                         <label className={classNames(styles.input, styles.labelInput, styles.balls)}>
-                            <input type='text' name='balls'/>
+                            <input type='text' name='balls' id='balls'/>
                             <img src={balls1} alt=''/>
                         </label>
 
                         <label className={styles.label} htmlFor='tickets'>Билеты</label>
                         <label className={classNames(styles.input, styles.labelInput, styles.tickets)}>
-                            <input type='text' name='tickets'/>
+                            <input type='text' name='tickets' id='tickets'/>
                             <img src={tickets1} alt=''/>
                         </label>
                     </div>
 
-                    <div className={styles.grid}>
+                    <div className={classNames(styles.grid, styles.additionalGrid)}>
                         <label className={styles.label} htmlFor='lang'>Язык</label>
-                        <input className={styles.input} type='text' name='lang' readOnly={true}/>
+                        <input className={styles.input} type='text' id='lang' name='lang' readOnly={true}/>
 
                         <label className={styles.label} htmlFor='tariff'>Тариф</label>
-                        <input className={styles.input} type='text' name='tariff' readOnly={true}/>
+                        <input className={styles.input} type='text' id='tariff' name='tariff' readOnly={true}/>
 
                         <label className={styles.label} htmlFor='expdate'>Срок действия</label>
                         <div className={styles.exprdate}>
                             {/* eslint-disable-next-line max-len */}
-                            <input className={classNames(styles.input, styles.short)} type='text' name='expdate' readOnly={true}/>
+                            <input className={classNames(styles.input, styles.short)} type='text' id='expdate' name='expdate' readOnly={true}/>
                             {/* eslint-disable-next-line max-len */}
-                            <input className={classNames(styles.input, styles.short)} type='text' name='expdate' readOnly={true}/>
+                            <input className={classNames(styles.input, styles.short)} type='text' id='expdate' name='expdate' readOnly={true}/>
                         </div>
                     </div>
 
                     <div className={styles.bonuses}>
                         <label className={styles.label} htmlFor='trustPhone'>Номер подтверждён</label>
-                        <select name='trustPhone'>
+                        <select name='trustPhone' id='trustPhone'>
                             <option value='yes'>Да</option>
                             <option value='no'>Нет</option>
                         </select>
 
                         <label className={styles.label} htmlFor='trustMail'>Почта подтверждена</label>
-                        <select name='trustMail'>
+                        <select name='trustMail' id='trustMail'>
                             <option value='yes'>Да</option>
                             <option value='no'>Нет</option>
                         </select>
                     </div>
                 </form>
 
-                <div className={styles.footerButtons}>
-                    <button className={styles.button}>Отмена</button>
-                    <button className={classNames(styles.button, styles.save)}>Сохранить изменения</button>
+                <div className={styles.footer}>
+                    <button type='button' className={styles.button}>Отмена</button>
+                    <button type='submit' className={classNames(styles.button, styles.save)}>Сохранить изменения
+                    </button>
                 </div>
             </div>
         </div>

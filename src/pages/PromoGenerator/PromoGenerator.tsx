@@ -11,10 +11,10 @@ const PromoGenerator = () => {
             <div className={styles.content}>
 
                 <label className={classNames(styles.label, styles.div1)} htmlFor='quantity'>Кол-во</label>
-                <input className={classNames(styles.input, styles.div2)} name='name' type='quantity'/>
+                <input className={classNames(styles.input, styles.div2)} name='name' id='quantity' type='quantity'/>
 
                 <label className={classNames(styles.label, styles.div3)} htmlFor='game'>Номинал</label>
-                <input className={classNames(styles.input, styles.div4)} name='game' type='text'/>
+                <input className={classNames(styles.input, styles.div4)} name='game' id='game' type='text'/>
 
                 <select name='units' id='units' className={styles.div5}>
                     <option value='TMT'>TMT</option>
@@ -24,12 +24,11 @@ const PromoGenerator = () => {
             </div>
 
             <div className={styles.footer}>
-                <button className={styles.button}>Отмена</button>
-                <button className={classNames(styles.button, styles.generate)}>Сгенерировать и экспортировать в CSV
+                <button type='button' className={styles.button}>Отмена</button>
+                <button type='submit' className={classNames(styles.button, styles.generate)}>Сгенерировать и
+                    экспортировать в CSV
                 </button>
             </div>
-
-
         </div>
     );
 };

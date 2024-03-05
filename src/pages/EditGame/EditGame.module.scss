@@ -1,38 +1,33 @@
 .editGame {
   @include panel;
   width: 100%;
-  padding: 0 16px;
-}
-
-form {
   height: 500px;
+  padding: 0 16px;
   display: flex;
   flex-direction: column;
 }
 
-
 .content {
   display: grid;
   grid-template-columns: 150px auto;
+  grid-template-rows: repeat(3, 50px);
   align-items: center;
   margin-top: 36px;
 }
 
 .label {
   @include label;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .input {
   @include input;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
-.buttonsPanel {
-  display: flex;
-  align-items: center;
+.footer {
+  @include footer;
   justify-content: space-between;
-  margin: auto 38px 38px 0;
 }
 
 .button {
@@ -42,6 +37,11 @@ form {
 .save {
   margin-left: 6px;
   @include button;
+  background-color: $primary-color;
+}
+
+.additionalButtons {
+  justify-content: space-between;
 }
 
 

@@ -7,31 +7,31 @@ const EditGame = () => {
         <div className={styles.editGame}>
             <Heading title='Редактировать игру' size={3}/>
 
-            <form action='#'>
-                <div className={styles.content}>
-                    <label className={styles.label} htmlFor='name'>Название</label>
-                    <input className={styles.input} type='text' name='name'/>
+            <form action='#' className={styles.content}>
+                <label className={styles.label} htmlFor='name'>Название</label>
+                <input className={styles.input} type='text' id='name' name='name'/>
 
-                    <label className={styles.label} htmlFor='link'>Ссылка</label>
-                    <input className={styles.input} type='text' name='link'/>
+                <label className={styles.label} htmlFor='link'>Ссылка</label>
+                <input className={styles.input} type='text' id='link' name='link'/>
 
-                    <label className={styles.label} htmlFor='category'>Категория</label>
-                    <select className={styles.select} name='category' id='category'>
-                        <option value='nomoney'>Бесплатно</option>
-                        <option value='standartLib'>Стандартная библиотека</option>
-                        <option value='extendetLib'>Расширенная библиотека</option>
-                    </select>
-                </div>
-
-                <div className={styles.buttonsPanel}>
-                    <button className={styles.button}>Удалить игру</button>
-
-                    <div className={styles.additionalButtons}>
-                        <button className={styles.button}>Отмена</button>
-                        <button className={classNames(styles.button, styles.save)}>Сохранить изменения</button>
-                    </div>
-                </div>
+                <label className={styles.label} htmlFor='category'>Категория</label>
+                <select className={styles.select} name='category' id='category'>
+                    <option value='nomoney'>Бесплатно</option>
+                    <option value='standartLib'>Стандартная библиотека</option>
+                    <option value='extendetLib'>Расширенная библиотека</option>
+                </select>
             </form>
+
+            <div className={styles.footer}>
+                <button type='button' className={styles.button}>Удалить игру</button>
+
+                <div className={styles.additionalButtons}>
+                    <button type='button' className={styles.button}>Отмена</button>
+                    <button type='submit' className={classNames(styles.button, styles.save)}>Сохранить изменения
+                    </button>
+                </div>
+            </div>
+
         </div>
     );
 };
