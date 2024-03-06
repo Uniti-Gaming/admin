@@ -1,19 +1,8 @@
 .editAccountOperator {
-  display: flex;
-  flex-direction: column;
-
   @include panel;
-  width: 100%;
-  height: 500px;
-  padding: 0 16px;
-}
 
-.content {
-  display: grid;
-  grid-template-columns: 150px auto;
-  grid-template-rows: repeat(5, 50px);
-  align-items: center;
-  margin-top: 36px;
+  width: 100%;
+  padding: 0 16px;
 }
 
 .label {
@@ -29,8 +18,8 @@
 .button {
   @include button($additional-panel-bg-color);
 
-  &:not(:last-of-type) {
-    margin-right: 6px;
+  &:last-of-type {
+    margin-left: 6px;
   }
 }
 
@@ -38,14 +27,21 @@
   @include footer;
 }
 
-.button {
-  @include button($additional-panel-bg-color);
+.save {
+  background-color: $primary-color;
+  margin-left: 6px;
 }
 
-.save {
-  margin-left: 6px;
-  @include button;
-  background-color: $primary-color;
+.left {
+  margin-right: auto;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 150px auto;
+  grid-template-rows: repeat(5, 50px);
+  align-items: center;
+  margin-top: 36px;
 }
 
 .short {
@@ -70,3 +66,10 @@
     }
   }
 }
+
+.editForm {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+

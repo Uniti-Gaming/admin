@@ -13,4 +13,5 @@
 @mixin panel {
     background-color: $panels-bg-color;
     border-radius: 15px;
+    box-sizing: border-box;
 }

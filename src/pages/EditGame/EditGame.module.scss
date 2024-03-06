@@ -1,18 +1,9 @@
 .editGame {
   @include panel;
   width: 100%;
-  height: 500px;
   padding: 0 16px;
   display: flex;
   flex-direction: column;
-}
-
-.content {
-  display: grid;
-  grid-template-columns: 150px auto;
-  grid-template-rows: repeat(3, 50px);
-  align-items: center;
-  margin-top: 36px;
 }
 
 .label {
@@ -27,7 +18,6 @@
 
 .footer {
   @include footer;
-  justify-content: space-between;
 }
 
 .button {
@@ -35,13 +25,27 @@
 }
 
 .save {
-  margin-left: 6px;
   @include button;
   background-color: $primary-color;
+  margin-left: 6px;
 }
 
-.additionalButtons {
-  justify-content: space-between;
+.left {
+  margin-right: auto;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 150px auto;
+  grid-template-rows: repeat(3, 50px);
+  align-items: center;
+  margin-top: 36px;
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
 }
 
 
