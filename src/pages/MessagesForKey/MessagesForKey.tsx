@@ -13,7 +13,7 @@ const MessagesForKey = () => {
                     <hr className={styles.line}/>
 
                     {/* eslint-disable-next-line max-len */}
-                    <textarea className={styles.text} name="newmessage" id="newmessage" placeholder="Введите новое сообщение для ключа"></textarea>
+                    <textarea className={styles.text} name='newmessage' id='newmessage' placeholder='Введите новое сообщение для ключа'></textarea>
 
                     <p className={styles.counter}>0/500</p>
                 </div>
@@ -22,11 +22,11 @@ const MessagesForKey = () => {
                     <h3 className={styles.heading}>ТЕКУЩЕЕ СООБЩЕНИЕ</h3>
 
                     {/* eslint-disable-next-line max-len */}
-                    <textarea className={styles.currText} name="newmessage" value="Приглашаем вас на ивент по игре CS:GО, который состоится 8 сентября в 20:00. Все подробности на нашем сайте в разделе “Новости”."></textarea>
+                    <textarea className={styles.currText} name='newmessage' value='Приглашаем вас на ивент по игре CS:GО, который состоится 8 сентября в 20:00. Все подробности на нашем сайте в разделе “Новости”.'></textarea>
                 </div>
 
                 <div className={styles.footer}>
-                    <button type="submit" className={classNames(styles.button, styles.save)}>
+                    <button type='submit' className={classNames(styles.button, styles.save)}>
                         Сохранить изменения
                     </button>
                 </div>
@@ -39,7 +39,7 @@ const MessagesForKey = () => {
                     <hr className={styles.line}/>
 
                     {/* eslint-disable-next-line max-len */}
-                    <textarea className={styles.text} name="newmessage" id="newmessage" placeholder="Введите новое сообщение для ключа"></textarea>
+                    <textarea className={styles.text} name='newmessage' id='newmessage' placeholder='Введите новое сообщение для ключа'></textarea>
 
                     <p className={styles.counter}>0/500</p>
                 </div>
@@ -48,11 +48,11 @@ const MessagesForKey = () => {
                     <h3 className={styles.heading}>ТЕКУЩЕЕ СООБЩЕНИЕ</h3>
 
                     {/* eslint-disable-next-line max-len */}
-                    <textarea className={styles.currText} name="newmessage" value="Приглашаем вас на ивент по игре CS:GО, который состоится 8 сентября в 20:00. Все подробности на нашем сайте в разделе “Новости”."></textarea>
+                    <textarea className={styles.currText} name='newmessage' value='Приглашаем вас на ивент по игре CS:GО, который состоится 8 сентября в 20:00. Все подробности на нашем сайте в разделе “Новости”.'></textarea>
                 </div>
 
                 <div className={styles.footer}>
-                    <button type="submit" className={classNames(styles.button, styles.save)}>
+                    <button type='submit' className={classNames(styles.button, styles.save)}>
                         Сохранить изменения
                     </button>
                 </div>
