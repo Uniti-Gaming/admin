@@ -1,86 +1,77 @@
-.messagesForKey {
-  width: 990px;
+.newMessage,
+.currMessage {
+  @include panel;
+  width: 560px;
+  height: 220px;
+  background-color: $additional-panel-bg-color;
+  position: relative;
+  margin-bottom: 10px;
+}
 
+.heading {
+  padding: 8px 14px;
+  margin: 0;
+  font-size: 15px;
+  line-height: 22.5px;
+}
 
-  .messagesForKey__content {
-    @include panel;
-    padding: 28px;
+.line {
+  margin: 0;
+}
 
-    padding-bottom: 65px;
+.text,
+.currText{
+  padding: 8px 14px;
+  width: 85%;
+  height: 160px;
+  box-sizing: border-box;
+  resize: none;
+  background-color: $additional-panel-bg-color;
+  border: none;
+  outline: none;
+  color: $table-header-color;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22.5px;
+}
 
-    .messagesForKey__newMessage,
-    .messagesForKey__currMessage {
-      @include panel;
-      padding-bottom: 1px;
-      background-color: $panels-additional-bg-color;
-      width: 580px;
-    }
+.text::placeholder,
+.counter {
+  color: $table-header-color;
+}
 
-    .messagesForKey__newMessage {
-      margin-bottom: 20px;
-    }
+.currText {
+  background-color: $panels-additional-bg-color;
+  font-size: 10px;
+}
 
-    .messagesForKey__currMessage {
-      textarea {
-        margin-left: 50px;
-      }
-    }
+.counter {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  font-size: 10px;
+  line-height: 22.5px;
+}
 
-    h2, h3 {
-      border-bottom: 1px solid $aside-delimiter-color;
-      padding: 12px 8px;
-      margin: 0;
-      font-size: 18px;
-      font-weight: bold;
-      @include panel;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-    }
+.currMessage {
+  width: 530px;
+  padding-left: 30px;
+}
 
-    h3 {
-      margin: 0;
-      font-size: 15px;
-      padding-left: 23px;
-    }
+.button {
+  @include button;
 
-    textarea {
-      font-size: 15px;
-      line-height: 22.5px;
-      background-color: transparent;
-      border: none;
-      color: $text-color;
-      caret-color: violet;
-      resize: none;
-      margin-top: 10px;
-
-      &:focus {
-        outline: none;
-      }
-    }
-
-    p {
-      text-align: right;
-      margin-right: 12px;
-      font-size: 10px;
-      font-weight: 300;
-      line-height: 22.5px;
-      color: $table-header-color;
-    }
-
-    .buttonPanel {
-      text-align: right;
-      margin-top: 10px;
-      width: 580px;
-
-      button {
-        // @include primary-button;
-        padding: 8px 24px;
-      }
-
-      &:not(:last-of-type) {
-        margin-bottom: 23px;
-      }
-    }
+  &:not(:last-of-type) {
+    margin-right: 6px;
   }
+}
 
+.footer {
+  @include footer;
+  justify-content: right;
+  margin-right: 0;
+}
+
+.save {
+  background-color: $primary-color;
 }
