@@ -1,0 +1,14 @@
+.wrapper {
+    @include panel(28px 38px);
+    width: 100%;
+}
+
+.input {
+    position: relative;
+    
+    input {
+        @include input;
+        color: transparent;
+        caret-color: $text-color;
+    }
+}

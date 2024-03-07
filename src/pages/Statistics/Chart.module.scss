@@ -1,7 +1,5 @@
 .wrapper {
-    border-radius: 10px;
-    background-color: $panels-bg-color;
-    padding: 20px 32px 24px;
+    @include panel(20px 32px 24px);
 }
 
 .title {
