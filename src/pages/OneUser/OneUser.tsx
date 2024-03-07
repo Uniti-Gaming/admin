@@ -1,4 +1,3 @@
-// import classNames from 'classnames';
 import styles from './OneUser.module.scss';
 import classNames from 'classnames';
 import {bonuses1, tickets1, balls1} from '@images';

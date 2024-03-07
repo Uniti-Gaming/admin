@@ -9,4 +9,3 @@ export { default as EditCard} from './EditCard/EditCard';
 export { default as EditAccountOperator} from './EditAccountOperator/EditAccountOperator';
 export { default as PromoGenerator} from './PromoGenerator/PromoGenerator';
 
-
