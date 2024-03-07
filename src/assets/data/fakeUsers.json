@@ -1,0 +1,407 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "email": {
+            "email": "john.doe@example.com",
+            "verified": true
+        },
+        "phone": {
+            "number": "+123456789",
+            "verified": true
+        },
+        "tariff": {
+            "name": "Basic Plan",
+            "start_date": "2024-03-01",
+            "end_date": "2024-03-31"
+        },
+        "balance": {
+            "main": 50,
+            "tickets": 2,
+            "coins": 100
+        },
+        "language": "ru",
+        "status": "active",
+        "registration_date": "2024-03-07",
+        "comment": "Regular user",
+        "data": "Some user data"
+    },
+    {
+        "id": 2,
+        "name": "Alice Smith",
+        "email": {
+            "email": "alice.smith@example.com",
+            "verified": true
+        },
+        "phone": {
+            "number": "+987654321",
+            "verified": true
+        },
+        "tariff": {
+            "name": "Premium Plan",
+            "start_date": "2024-02-15",
+            "end_date": "2024-04-15"
+        },
+        "balance": {
+            "main": 75,
+            "tickets": 5,
+            "coins": 200
+        },
+        "language": "tm",
+        "status": "blocked",
+        "registration_date": "2024-02-28",
+        "comment": "VIP customer",
+        "data": "Some user data"
+    },
+    {
+        "id": 3,
+        "name": "Emma Johnson",
+        "email": {
+            "email": "emma.johnson@example.com",
+            "verified": true
+        },
+        "phone": {
+            "number": "+111223344",
+            "verified": true
+        },
+        "tariff": {
+            "name": "Starter Plan",
+            "start_date": "2024-03-10",
+            "end_date": "2024-04-10"
+        },
+        "balance": {
+            "main": 30,
+            "tickets": 1,
+            "coins": 50
+        },
+        "language": "en",
+        "status": "active",
+        "registration_date": "2024-03-15",
+        "comment": "New user",
+        "data": "Some user data"
+    },
+    {
+        "id": 4,
+        "name": "Michael Brown",
+        "email": {
+            "email": "michael.brown@example.com",
+            "verified": true
+        },
+        "phone": {
+            "number": "+445566778",
+            "verified": true
+        },
+        "tariff": {
+            "name": "Silver Plan",
+            "start_date": "2024-02-20",
+            "end_date": "2024-04-20"
+        },
+        "balance": {
+            "main": 60,
+            "tickets": 3,
+            "coins": 150
+        },
+        "language": "fr",
+        "status": "active",
+        "registration_date": "2024-02-25",
+        "comment": "Frequent user",
+        "data": "Some user data"
+    },
+    {
+        "id": 5,
+        "name": "Sophia Miller",
+        "email": {
+            "email": "sophia.miller@example.com",
+            "verified": true
+        },
+        "phone": {
+            "number": "+998877665",
+            "verified": true
+        },
+        "tariff": {
+            "name": "Gold Plan",
+            "start_date": "2024-03-05",
+            "end_date": "2024-05-05"
+        },
+        "balance": {
+            "main": 90,
+            "tickets": 7,
+            "coins": 300
+        },
+        "language": "es",
+        "status": "active",
+        "registration_date": "2024-03-12",
+        "comment": "Premium user",
+        "data": "Some user data"
+    },
+    {
+        "id": 6,
+        "name": "William Taylor",
+        "email": {
+            "email": "william.taylor@example.com",
+            "verified": true
+        },
+        "phone": {
+            "number": "+332211445",
+            "verified": true
+        },
+        "tariff": {
+            "name": "Platinum Plan",
+            "start_date": "2024-02-10",
+            "end_date": "2024-04-10"
+        },
+        "balance": {
+            "main": 80,
+            "tickets": 6,
+            "coins": 250
+        },
+        "language": "de",
+        "status": "active",
+        "registration_date": "2024-02-15",
+        "comment": "Power user",
+        "data": "Some user data"
+    },
+    {
+        "id": 7,
+        "name": "Olivia Anderson",
+        "email": {
+            "email": "olivia.anderson@example.com",
+            "verified": true
+        },
+        "phone": {
+            "number": "+554433221",
+            "verified": true
+        },
+        "tariff": {
+            "name": "Business Plan",
+            "start_date": "2024-03-03",
+            "end_date": "2024-05-03"
+        },
+        "balance": {
+            "main": 70,
+            "tickets": 4,
+            "coins": 180
+        },
+        "language": "it",
+        "status": "active",
+        "registration_date": "2024-03-08",
+        "comment": "Corporate user",
+        "data": "Some user data"
+    },
+    {
+        "id": 8,
+        "name": "James Wilson",
+        "email": {
+            "email": "james.wilson@example.com",
+            "verified": true
+        },
+        "phone": {
+            "number": "+112233445",
+            "verified": true
+        },
+        "tariff": {
+            "name": "Family Plan",
+            "start_date": "2024-02-25",
+            "end_date": "2024-04-25"
+        },
+        "balance": {
+            "main": 45,
+            "tickets": 2,
+            "coins": 120
+        },
+        "language": "ru",
+        "status": "active",
+        "registration_date": "2024-03-01",
+        "comment": "Friendly user",
+        "data": "Some user data"
+    },
+    {
+        "id": 9,
+        "name": "Liam Moore",
+        "email": {
+            "email": "liam.moore@example.com",
+            "verified": true
+        },
+        "phone": {
+            "number": "+778899001",
+            "verified": true
+        },
+        "tariff": {
+            "name": "Essential Plan",
+            "start_date": "2024-02-28",
+            "end_date": "2024-04-28"
+        },
+        "balance": {
+            "main": 55,
+            "tickets": 3,
+            "coins": 130
+        },
+        "language": "tm",
+        "status": "active",
+        "registration_date": "2024-03-05",
+        "comment": "Regular customer",
+        "data": "Some user data"
+    },
+    {
+        "id": 10,
+        "name": "Ava Turner",
+        "email": {
+            "email": "ava.turner@example.com",
+            "verified": true
+        },
+        "phone": {
+            "number": "+334455667",
+            "verified": true
+        },
+        "tariff": {
+            "name": "Ultimate Plan",
+            "start_date": "2024-03-15",
+            "end_date": "2024-05-15"
+        },
+        "balance": {
+            "main": 100,
+            "tickets": 8,
+            "coins": 350
+        },
+        "language": "es",
+        "status": "active",
+        "registration_date": "2024-03-20",
+        "comment": "Exclusive user",
+        "data": "Some user data"
+    },
+    {
+        "id": 11,
+        "name": "Mia Clark",
+        "email": {
+            "email": "mia.clark@example.com",
+            "verified": true
+        },
+        "phone": {
+            "number": "+556677889",
+            "verified": true
+        },
+        "tariff": {
+            "name": "Pro Plan",
+            "start_date": "2024-02-20",
+            "end_date": "2024-04-20"
+        },
+        "balance": {
+            "main": 65,
+            "tickets": 4,
+            "coins": 160
+        },
+        "language": "fr",
+        "status": "active",
+        "registration_date": "2024-02-25",
+        "comment": "Experienced user",
+        "data": "Some user data"
+    },
+    {
+        "id": 12,
+        "name": "Ethan Baker",
+        "email": {
+            "email": "ethan.baker@example.com",
+            "verified": true
+        },
+        "phone": {
+            "number": "+998877665",
+            "verified": true
+        },
+        "tariff": {
+            "name": "Advanced Plan",
+            "start_date": "2024-03-10",
+            "end_date": "2024-05-10"
+        },
+        "balance": {
+            "main": 85,
+            "tickets": 6,
+            "coins": 280
+        },
+        "language": "en",
+        "status": "active",
+        "registration_date": "2024-03-15",
+        "comment": "Skilled user",
+        "data": "Some user data"
+    },
+    {
+        "id": 13,
+        "name": "Logan Harris",
+        "email": {
+            "email": "logan.harris@example.com",
+            "verified": true
+        },
+        "phone": {
+            "number": "+332211445",
+            "verified": true
+        },
+        "tariff": {
+            "name": "Elite Plan",
+            "start_date": "2024-02-15",
+            "end_date": "2024-04-15"
+        },
+        "balance": {
+            "main": 75,
+            "tickets": 5,
+            "coins": 200
+        },
+        "language": "de",
+        "status": "active",
+        "registration_date": "2024-02-28",
+        "comment": "Top user",
+        "data": "Some user data"
+    },
+    {
+        "id": 14,
+        "name": "Aria White",
+        "email": {
+            "email": "aria.white@example.com",
+            "verified": true
+        },
+        "phone": {
+            "number": "+554433221",
+            "verified": true
+        },
+        "tariff": {
+            "name": "Executive Plan",
+            "start_date": "2024-03-03",
+            "end_date": "2024-05-03"
+        },
+        "balance": {
+            "main": 70,
+            "tickets": 4,
+            "coins": 180
+        },
+        "language": "it",
+        "status": "active",
+        "registration_date": "2024-03-08",
+        "comment": "High-level user",
+        "data": "Some user data"
+    },
+    {
+        "id": 15,
+        "name": "Carter Lee",
+        "email": {
+            "email": "carter.lee@example.com",
+            "verified": true
+        },
+        "phone": {
+            "number": "+112233445",
+            "verified": true
+        },
+        "tariff": {
+            "name": "Premium Plus Plan",
+            "start_date": "2024-02-25",
+            "end_date": "2024-04-25"
+        },
+        "balance": {
+            "main": 45,
+            "tickets": 2,
+            "coins": 120
+        },
+        "language": "ru",
+        "status": "active",
+        "registration_date": "2024-03-01",
+        "comment": "Special user",
+        "data": "Some user data"
+    }
+]

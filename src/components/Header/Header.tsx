@@ -12,7 +12,6 @@ const Header = () => {
                 <img className={styles.logo} src={logo} alt='Unite logo' />
 
                 <div className={styles.header__addition}>
-                    {/* Я не уверен что это правильный подход */}
                     <Routes>
                         {routes.map((route, index) => (
                             <Route
@@ -21,6 +20,10 @@ const Header = () => {
                                 element={<h1 className={styles.title}>{route.name}</h1>}
                             />
                         ))}
+                        <Route
+                            path='/users/:id'
+                            element={<h1 className={styles.title}>Управление пользователями</h1>}
+                        />
                     </Routes>
 
                     <div className={styles.buttons__panel}>

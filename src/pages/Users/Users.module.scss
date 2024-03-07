@@ -1,0 +1,42 @@
+.panel {
+  @include panel;
+  width: 100%;
+}
+
+.email {
+  display: block;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 145%;
+  color: $inactive-text-color;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.counter {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: $inactive-text-color;
+  padding: 70px 20px 40px;
+}
+
+.pagination {
+  text-align: end;
+  padding: 15px 45px 0 0;
+}
+
+td.active {
+  color: $active-account-tip-color;
+}
+
+td.blocked {
+  color: $block-account-tip-color;
+}
+
+.link {
+  color: #9F2EC7;
+  text-decoration: none;
+}
