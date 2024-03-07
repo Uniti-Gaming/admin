@@ -1,9 +1,9 @@
-import styles from './OneUser.module.scss';
 import classNames from 'classnames';
-import {bonuses1, tickets1, balls1} from '@images';
+import styles from './User.module.scss';
+import { bonuses1, tickets1, balls1 } from '@images';
 
 
-const OneUser = () => {
+export const User = () => {
     return (
         <div className={styles.oneUser}>
 
@@ -116,5 +116,3 @@ const OneUser = () => {
         </div>
     );
 };
-
-export default OneUser;
