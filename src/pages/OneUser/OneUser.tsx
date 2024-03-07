@@ -1,116 +1,118 @@
-import classNames from 'classnames';
 import styles from './OneUser.module.scss';
+import classNames from 'classnames';
+import {bonuses1, tickets1, balls1} from '@images';
 
 
 const OneUser = () => {
     return (
-        <div className={styles.OneUser}>
+        <div className={styles.oneUser}>
 
-            <div className={styles.oneUser__content}>
+            <div className={styles.leftPanel}>
+                <h2 className={styles.userName}>Sisyphus Ventures</h2>
+                <h3 className={styles.userID}>UG-45-qwer</h3>
 
-                <div className={styles.oneUser__leftPanel}>
-                    <div className={styles.leftPanel__userName}>
-
-                        <h3>Sisyphus Ventures</h3>
-                        <h2>UG-45-qwer</h2>
-                    </div>
-
-                    <div className={styles.leftPanel__profileData}>
-                        <h2>Данные профиля</h2>
-                        <p>Здесь будут отображены данные профиля</p>
-                    </div>
-
-                    <div className={styles.leftPanel__comments}>
-                        <h2>Коментарии</h2>
-                        <p>Здесь будут отображены коментраии к профилю</p>
-                    </div>
-
-                    <div className={styles.leftPanel__additionalPanel}>
-                        <h2>Причина блокировки:</h2>
-                        <p>Оскорбление администрации</p>
-                    </div>
-                    <button className={styles.reset}>Сбросить пароль</button>
+                <div className={styles.profileData}>
+                    <h3>Данные профиля</h3>
+                    <p>Здесь будут отображены данные профиля</p>
                 </div>
 
-                <div className={styles.oneUser__rightPanel}>
-                    <div className={styles.rightPanel__accountStatus}>
-                        <p>Статус аккаунта</p>
-                        <button
-                            className={classNames(styles.status, styles.active)}
-                        >
-                            Активен
-                        </button>
-                    </div>
-
-                    <form action='#'>
-                        <div>
-                            <label htmlFor='name'>Имя</label>
-                            <input type='text' name='name' value='Vasily'/>
-                        </div>
-                        <div>
-                            <label htmlFor='email'>Email</label>
-                            <input type='email' name='email' value='vasya-pupkin@mail.tm'/>
-                        </div>
-                        <div className={styles.id}>
-                            <label htmlFor='id'>ID</label>
-                            <input className={styles.shortInput} value='UG-45-qwer' name='id' readOnly={true}/>
-                        </div>
-                        <div>
-                            <label htmlFor='phone'>Номер телефона</label>
-                            <input type='phone' name='phone' value='+993 (65) 12-54-12'/>
-                        </div>
-                        <div className={styles.dateRegistration}>
-                            <label htmlFor='dateRegistration'>Дата регистрации</label>
-                            <input type='text' name='dateRegistration' readOnly={true} value='18.09.2022'/>
-                        </div>
-
-                        <div className={styles.bonuses}>
-                            <div>
-                                <label htmlFor='balance'>Баланс</label>
-                                <input type='text' name='balance' value={'50 TMT'}/>
-                            </div>
-                            <div>
-                                <label htmlFor='balls'>Баллы</label>
-                                <input type='text' name='balls' value='800 UG'/>
-                            </div>
-                            <div>
-                                <label htmlFor='tickets'>Билеты</label>
-                                <input type='text' name='tickets' value='3Ticket'/>
-                            </div>
-                        </div>
-
-                        <div>
-                            <label htmlFor='lang'>Язык</label>
-                            <input type='text' name='lang' value='Русский' readOnly={true}/>
-                        </div>
-
-                        <div>
-                            <label htmlFor='tarif'>Тариф</label>
-                            <input type='text' name='tarif' value='Нет' readOnly={true}/>
-                        </div>
-
-                        <div className={styles.limitsDate}>
-                            <label htmlFor='limitsDate'>Срок действия</label>
-                            <input type='date' name='limitsDateFrom' readOnly={true}/>
-                            <input type='date' name='limitsDateBefore' readOnly={true}/>
-                        </div>
-
-                        {/* Здесь нужно добавить листбоксы для подтверждения почты и телефона*/}
-                        <div className={styles.button__panel}>
-                            <button type='button' className={styles.cancel}>
-                                Отмена
-                            </button>
-                            <button type='submit' className={styles.submit}>
-                                Сохранить изменения
-                            </button>
-                        </div>
-
-                    </form>
+                <div className={styles.profileComments}>
+                    <h3>Коментарии</h3>
+                    <p>Здесь будут отображены коментраии к профилю</p>
                 </div>
 
+                <div className={styles.blockReason}>
+                    <h3>Причина блокировки:</h3>
+                    <p>Оскорбление администрации</p>
+                </div>
 
+                <button className={styles.button}>Сбросить пароль</button>
             </div>
 
+            <div className={styles.rightPanel}>
+
+                <div className={styles.blockStatus}>
+                    <p>Статус блокировки аккаунта</p>
+
+                    <button className={styles.button}>Заблокирован</button>
+                </div>
+
+                <form action='#'>
+                    <div className={styles.grid}>
+                        <label className={styles.label} htmlFor='name'>Имя</label>
+                        <input className={styles.input} type='text' id='name' name='name'/>
+
+                        <label className={styles.label} htmlFor='email'>Email</label>
+                        <input className={styles.input} type='text' id='email' name='email'/>
+
+                        <label className={styles.label} htmlFor='id'>ID</label>
+                        {/* eslint-disable-next-line max-len */}
+                        <input className={classNames(styles.input, styles.short)} type='text' id='text' name='id' readOnly={true}/>
+
+                        <label className={styles.label} htmlFor='phone'>Номер телефона</label>
+                        <input className={styles.input} type='text' id='phone' name='phone'/>
+
+                        <label className={styles.label} htmlFor='regdate'>Дата регистрации</label>
+                        <input className={styles.input} type='text' id='regdate' name='regdate' readOnly={true}/>
+                    </div>
+
+                    <div className={styles.bonuses}>
+                        <label className={styles.label} htmlFor='balance'>Баланс</label>
+                        <label className={classNames(styles.input, styles.labelInput, styles.balance)}>
+                            <input type='text' name='balance' id='balance'/>
+                            <img src={bonuses1} alt=''/>
+                        </label>
+
+                        <label className={styles.label} htmlFor='balls'>Баллы</label>
+                        <label className={classNames(styles.input, styles.labelInput, styles.balls)}>
+                            <input type='text' name='balls' id='balls'/>
+                            <img src={balls1} alt=''/>
+                        </label>
+
+                        <label className={styles.label} htmlFor='tickets'>Билеты</label>
+                        <label className={classNames(styles.input, styles.labelInput, styles.tickets)}>
+                            <input type='text' name='tickets' id='tickets'/>
+                            <img src={tickets1} alt=''/>
+                        </label>
+                    </div>
+
+                    <div className={classNames(styles.grid, styles.additionalGrid)}>
+                        <label className={styles.label} htmlFor='lang'>Язык</label>
+                        <input className={styles.input} type='text' id='lang' name='lang' readOnly={true}/>
+
+                        <label className={styles.label} htmlFor='tariff'>Тариф</label>
+                        <input className={styles.input} type='text' id='tariff' name='tariff' readOnly={true}/>
+
+                        <label className={styles.label} htmlFor='expdate'>Срок действия</label>
+                        <div className={styles.exprdate}>
+                            {/* eslint-disable-next-line max-len */}
+                            <input className={classNames(styles.input, styles.short)} type='text' id='expdate' name='expdate' readOnly={true}/>
+                            {/* eslint-disable-next-line max-len */}
+                            <input className={classNames(styles.input, styles.short)} type='text' id='expdate' name='expdate' readOnly={true}/>
+                        </div>
+                    </div>
+
+                    <div className={styles.bonuses}>
+                        <label className={styles.label} htmlFor='trustPhone'>Номер подтверждён</label>
+                        <select name='trustPhone' id='trustPhone'>
+                            <option value='yes'>Да</option>
+                            <option value='no'>Нет</option>
+                        </select>
+
+                        <label className={styles.label} htmlFor='trustMail'>Почта подтверждена</label>
+                        <select name='trustMail' id='trustMail'>
+                            <option value='yes'>Да</option>
+                            <option value='no'>Нет</option>
+                        </select>
+                    </div>
+                </form>
+
+                <div className={styles.footer}>
+                    <button type='button' className={styles.button}>Отмена</button>
+                    <button type='submit' className={classNames(styles.button, styles.save)}>Сохранить изменения
+                    </button>
+                </div>
+            </div>
         </div>
     );
 };

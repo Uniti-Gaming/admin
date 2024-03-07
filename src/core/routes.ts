@@ -31,4 +31,16 @@ export const routes = [
         path: '/donut',
         name: 'Донат',
     },
+    {
+        path: '/editcard',
+        name: 'Редактировать карточку',
+    },
+    {
+        path: '/editaccountoperator',
+        name: 'Редактировать аккаунт оператора',
+    },
+    {
+        path: '/generatepromo',
+        name: 'Промокоды',
+    },
 ];

@@ -1,9 +1,8 @@
-.editGame {
+.editAccountOperator {
   @include panel;
+
   width: 100%;
   padding: 0 16px;
-  display: flex;
-  flex-direction: column;
 }
 
 .label {
@@ -16,16 +15,19 @@
   margin-bottom: 10px;
 }
 
+.button {
+  @include button($additional-panel-bg-color);
+
+  &:last-of-type {
+    margin-left: 6px;
+  }
+}
+
 .footer {
   @include footer;
 }
 
-.button {
-  @include button($additional-panel-bg-color);
-}
-
 .save {
-  @include button;
   background-color: $primary-color;
   margin-left: 6px;
 }
@@ -37,15 +39,37 @@
 .content {
   display: grid;
   grid-template-columns: 150px auto;
-  grid-template-rows: repeat(3, 50px);
+  grid-template-rows: repeat(5, 50px);
   align-items: center;
   margin-top: 36px;
 }
 
-.editForm {
-  display: flex;
-  flex-direction: column;
-  height: 400px;
+.short {
+  width: 120px;
 }
 
+.wrapperShowPass {
+  position: relative;
+  width: 250px;
+
+  .showPass {
+    padding: 5px;
+    background-color: $search-bg-color;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 30px;
+
+    img {
+      width: 19px;
+      height: 19px;
+    }
+  }
+}
+
+.editForm {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
 

@@ -1,0 +1,104 @@
+.editCard {
+  @include panel;
+  width: 100%;
+  padding: 0 16px;
+
+}
+
+.label {
+  @include label;
+  margin-bottom: 10px;
+}
+
+.input {
+  @include input;
+  margin-bottom: 10px;
+}
+
+.button {
+  @include button($additional-panel-bg-color);
+
+  &:not(:last-of-type) {
+    margin-right: 6px;
+  }
+}
+
+.footer {
+  @include footer;
+}
+
+.additional {
+  display: grid;
+  grid-template-columns: 150px auto 150px 238px;
+
+  .label {
+    @include label;
+    margin-top: 10px;
+
+    &:nth-child(3){
+      margin-left: 80px;
+    }
+  }
+
+  textarea {
+    background-color: $additional-panel-bg-color;;
+    width: 358px;
+    height: 360px;
+    resize: none;
+    border: none;
+    outline: none;
+    color: $text-color;
+  }
+
+  .balls {
+    height: 20px;
+    padding-left: 70px;
+  }
+}
+
+.editForm {
+  height: 850px;
+  display: flex;
+  flex-direction: column;
+}
+
+.labelInput {
+  position: relative;
+
+  input {
+    position: absolute;
+    top: 7px;
+    left: 40px;
+    width: 30px;
+    height: 20px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: $text-color;
+  }
+
+  img {
+    position: absolute;
+    top: 9px;
+    right: 80px;
+  }
+}
+
+.balls:after {
+  content: 'UG';
+  position: absolute;
+  right: 120px;
+  top: 10px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 150px auto;
+  grid-template-rows: repeat(6, 50px);
+  align-items: center;
+  margin-top: 36px;
+}
+
+.save {
+  background-color: $primary-color;
+}
