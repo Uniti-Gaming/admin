@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 
-import { Aside, Header, Table } from '@components';
+import {Aside, Header, Table} from '@components';
 import {
     User,
     Users,
