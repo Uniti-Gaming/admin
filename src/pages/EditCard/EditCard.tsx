@@ -1,7 +1,7 @@
 import styles from './EditCard.module.scss';
 import {Heading} from '@components';
 import classNames from 'classnames';
-import {balls1} from '@images';
+// import {balls1} from '@images';
 
 
 const EditCard = () => {
@@ -39,7 +39,7 @@ const EditCard = () => {
                         <label className={styles.label} htmlFor='price'>Цена</label>
                         <label className={classNames(styles.input, styles.labelInput, styles.balls)}>
                             <input className={styles.price} type='text' id='price' name='price'/>
-                            <img src={balls1} alt=''/>
+                            {/* <img src={balls1} alt=''/> */}
                         </label>
                     </div>
                 </div>
