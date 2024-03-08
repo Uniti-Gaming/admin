@@ -5,6 +5,7 @@ export { default as PaginationButtons } from './PaginationButtons/PaginationButt
 export { default as Row } from './Table/Row';
 export { Table, Thead, Tbody } from './Table/Table';
 export { SearchInput } from './SearchInput/SearchInput';
+export { BalanceInput } from './BalanceInput//BalanceInput';
 
 
 export type { RowProps } from './Table/Row';

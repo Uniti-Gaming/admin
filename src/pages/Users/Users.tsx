@@ -15,6 +15,12 @@ type UserNameProps = {
     email: string;
 }
 
+type Users = {
+    data: IUser[]
+    page: number
+    totalPages: number
+}
+
 /**
  * Renders the user's name and email.
  *
@@ -30,14 +36,27 @@ const UserName: FC<UserNameProps> = ({ name, email }) => {
 };
 
 export const Users = () => {
-    const [users, setUsers] = useState<IUser[]>(usersData.slice(0, 12));
+    const [users, setUsers] = useState<Users>({
+        data: usersData.slice(0, 12),
+        page: 1,
+        totalPages: Math.ceil(usersData.length / 12),
+    });
     const lang = 'ru';
 
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    /**
+     * Handles the page change event.
+     *
+     * @param {number} page - The new page number
+     * @return {void} 
+     */
     const handlePageChange = (page: number) => {
         const start = (page - 1) * 12;
         const end = start + 12;
-        setUsers(usersData.slice(start, end));
+        setUsers({
+            data: usersData.slice(start, end),
+            page,
+            totalPages: users.totalPages,
+        });
     };
     
     return (
@@ -60,7 +79,7 @@ export const Users = () => {
                     { cell: 'Действие' },
                 ]} />
                 <Tbody>
-                    {users.map((user) => (
+                    {users.data.map((user) => (
                         <Row
                             key={user.id}
                             row={[
@@ -82,10 +101,14 @@ export const Users = () => {
                 <tfoot>
                     <tr>
                         <td className={styles.counter} colSpan={3}>
-                                Показывает 1 страницу 12 из 50 пунктов
+                                Показывает {users.page} страницу {users.data.length} из {usersData.length} пунктов
                         </td>
                         <td className={styles.pagination} colSpan={3}>
-                            <PaginationButtons />
+                            <PaginationButtons
+                                totalPages={users.totalPages}
+                                currentPage={users.page}
+                                onChangePage={handlePageChange}
+                            />
                         </td>
                     </tr>
                 </tfoot>
