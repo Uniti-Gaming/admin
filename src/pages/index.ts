@@ -1,5 +1,5 @@
-export { default as OneUser } from './OneUser/OneUser';
-export { default as UserPanel } from './UserPanel/UserPanel';
+export { User } from './User/User';
+export { Users } from './Users/Users';
 export { default as MessagesForKey } from './MessagesForKey/MessagesForKey';
 export { default as Statistics } from './Statistics/Statistics';
 export { default as ExchangeRates } from './ExchangeRates/ExchangeRates';

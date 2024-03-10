@@ -19,5 +19,6 @@
 
     &.disabled {
         color: $inactive-text-color;
+        pointer-events: none;
     }
 }

@@ -1,16 +1,17 @@
-import {Route, Routes} from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import {Aside, Header, Table} from '@components';
 import {
-    OneUser,
-    UserPanel,
+    User,
+    Users,
     MessagesForKey,
     Statistics,
     ExchangeRates,
     EditGame,
     Donut,
     EditCard,
-    EditAccountOperator, PromoGenerator,
+    EditAccountOperator,
+    PromoGenerator,
 } from '@pages';
 
 import styles from './App.module.scss';
@@ -18,34 +19,30 @@ import styles from './App.module.scss';
 function App() {
     return (
         <>
-            <Header/>
+            <Header />
             <main className={styles.main}>
 
-                <Aside/>
-
+                <Aside />
                 <Routes>
-                    <Route path='/' element={<Statistics/>}/>
-                    <Route path='/users' element={<UserPanel/>}/>
+                    <Route path='/' element={<Statistics />} />
+                    <Route path='/users' element={<Users />} />
+                    <Route path='/users/:id' element={<User />} />
 
-                    {/* user должен быть динамическим роутом */}
-                    <Route path='/user' element={<OneUser/>}/>
+                    <Route path='/games' element={<Table />} />
 
-                    <Route path='/games' element={<Table/>}/>
+                    <Route path='/exchange-rates' element={<ExchangeRates />} />
 
-                    <Route path='/exchange-rates' element={<ExchangeRates/>}/>
+                    <Route path='/messages' element={<MessagesForKey />} />
 
-                    <Route path='/messages' element={<MessagesForKey/>}/>
+                    <Route path='/editgame' element={<EditGame />} />
 
-                    <Route path='/editgame' element={<EditGame/>}/>
+                    <Route path='/donut' element={<Donut />} />
 
-                    <Route path='/donut' element={<Donut/>}/>
+                    <Route path='/editcard' element={<EditCard />} />
 
-                    <Route path='/editcard' element={<EditCard/>}/>
+                    <Route path='/editaccountoperator' element={<EditAccountOperator />} />
 
-                    <Route path='/editaccountoperator' element={<EditAccountOperator/>}/>
-
-                    <Route path='/generatepromo' element={<PromoGenerator/>}/>
-
+                    <Route path='/generatepromo' element={<PromoGenerator />} />
                 </Routes>
 
             </main>
