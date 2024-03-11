@@ -41,7 +41,8 @@
   }
 
   textarea {
-    background-color: $additional-panel-bg-color;;
+    background-color: $additional-panel-bg-color;
+    padding: 16px;
     width: 358px;
     height: 360px;
     resize: none;
