@@ -35,7 +35,7 @@
     @include label;
     margin-top: 10px;
 
-    &:nth-child(3){
+    &:nth-child(3) {
       margin-left: 80px;
     }
   }
@@ -104,4 +104,9 @@
 
 .save {
   background-color: $primary-color;
+}
+
+.delete {
+  @include button($additional-panel-bg-color);
+  margin-right: auto;
 }

@@ -20,10 +20,10 @@ const EditCard = () => {
                     <input className={styles.input} type='text' id='game' name='game'/>
 
                     <label className={styles.label} htmlFor='photo'>Фото (URL)</label>
-                    <input className={styles.input} type='text' id='photo' name='photo'/>
+                    <input className={styles.input} type='url' id='photo' name='photo'/>
 
                     <label className={styles.label} htmlFor='logo'>Лого (URL)</label>
-                    <input className={styles.input} type='text' id='logo' name='logo'/>
+                    <input className={styles.input} type='url' id='logo' name='logo'/>
 
                     <label className={styles.label} htmlFor='type'>Тип</label>
                     <input className={styles.input} type='text' id='type' name='type'/>
@@ -37,14 +37,15 @@ const EditCard = () => {
                         <textarea name='descr' id='descr'/>
 
                         <label className={styles.label} htmlFor='price'>Цена</label>
-                        <label className={classNames(styles.input, styles.labelInput, styles.balls)}>
+                        <div className={classNames(styles.input, styles.labelInput, styles.balls)}>
                             <input className={styles.price} type='text' id='price' name='price'/>
                             <img className={styles.icon} src={tmtIcon} alt='ticket icon'/>
-                        </label>
+                        </div>
                     </div>
                 </div>
 
                 <div className={styles.footer}>
+                    <button type='button' className={styles.delete}>Удалить карточку</button>
                     <button type='button' className={styles.button}>Отмена</button>
                     <button type='submit' className={classNames(styles.button, styles.save)}>Сохранить изменения
                     </button>
