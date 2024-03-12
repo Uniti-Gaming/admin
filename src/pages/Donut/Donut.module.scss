@@ -1,6 +1,5 @@
 .donut {
   @include panel;
-
   padding: 0 16px;
   width: 100%;
 }
@@ -46,4 +45,3 @@
 .save {
   background-color: $primary-color;
 }
-

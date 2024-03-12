@@ -1,11 +1,11 @@
 @mixin input {
   padding: 8px 24px;
-  background-color: $additional-panel-bg-color;
+  background-color: $search-bg-color;
   border-radius: 6px;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: -0.01em;
-    outline: none;
-    border: none;
-    color: $text-color;
+  border: none;
+  color: $text-color;
+  box-sizing: border-box;
 }

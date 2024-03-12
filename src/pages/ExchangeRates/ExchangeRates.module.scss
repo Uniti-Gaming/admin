@@ -1,0 +1,69 @@
+@mixin icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+
+.wrapper {
+    @include panel(28px 38px);
+    width: 100%;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -0.01em;
+    margin: 0 0 36px;
+
+    &.mt {
+        margin-top: 56px;
+    }
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+.name {
+    display: block;
+    width: 60px;
+}
+
+.icon {
+    @include icon;
+}
+
+.pen {
+    @include icon;
+    background-image: url($iconPath + "/pen.svg");
+    background-position: center;
+    background-size: cover;
+}
+
+.ref {
+    display: flex;
+    gap: 75px;
+}
+
+.button {
+    @include button;
+
+    &.submit {
+        background-color: $primary-color;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: right;
+    margin-top: 120px;
+    gap: 8px;
+}

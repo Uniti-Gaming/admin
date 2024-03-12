@@ -9,20 +9,16 @@ type TableProps = {
 };
 
 type TbodyProps = {
-    tbody: RowProps[];
+    children: JSX.Element | JSX.Element[];
 }
 
 const Thead: FC<RowProps> = (props) => {
     return <thead className={styles.thead}><Row {...props} TagName='th' /></thead>;
 };
 
-const Tbody: FC<TbodyProps> = ({ tbody }) => {
+const Tbody: FC<TbodyProps> = ({ children }) => {
     return (
-        <tbody className={styles.tbody}>
-            {tbody.map((elem, index) => (
-                <Row key={index} {...elem} />
-            ))}
-        </tbody>
+        <tbody className={styles.tbody}>{children}</tbody>
     );
 };
 

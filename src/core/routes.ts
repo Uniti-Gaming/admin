@@ -8,10 +8,6 @@ export const routes = [
         name: 'Управление пользователями',
     },
     {
-        path: '/user',
-        name: 'Пользователь',
-    },
-    {
         path: '/games',
         name: 'Игры',
     },
