@@ -2,13 +2,14 @@ import styles from './GamesPanel.module.scss';
 
 import BeforeTable from '@/components/BeforeTable/BeforeTable';
 import {Table, Thead} from '@/components';
+import {IGameData} from '@interfaces';
 
 
-// type Games = {
-//     name: string,
-//     category: string,
-//     action: string
-// }
+type Games = {
+    data: IGameData[]
+    page: number
+    totalPages: number
+}
 
 const GamesPanel = () => {
     return (
