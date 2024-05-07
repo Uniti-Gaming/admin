@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 
-import {Aside, Header, Table} from '@components';
+import {Aside, Header} from '@components';
 import {
     User,
     Users,
@@ -12,6 +12,7 @@ import {
     EditCard,
     EditAccountOperator,
     PromoGenerator,
+    GamesPanel,
 } from '@pages';
 
 import styles from './App.module.scss';
@@ -28,7 +29,7 @@ function App() {
                     <Route path='/users' element={<Users />} />
                     <Route path='/users/:id' element={<User />} />
 
-                    <Route path='/games' element={<Table />} />
+                    <Route path='/games' element={<GamesPanel />} />
 
                     <Route path='/exchange-rates' element={<ExchangeRates />} />
 
