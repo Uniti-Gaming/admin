@@ -13,8 +13,6 @@ type Games = {
 }
 
 const GamesPanel = () => {
-
-
     const [games, setGames] = useState<Games>({
         data: gamesData.slice(0, 12),
         page: 1,
@@ -57,15 +55,15 @@ const GamesPanel = () => {
                 ]}/>
 
                 <Tbody>
-                    {games.data.map((game) => (
+                    {games.data.map((game, index) => (
                         <Row
-                            key={game.id}
+                            key={index}
                             row={[
 
-                                { cell: game.id, extraClass: styles.alignLeft },
-                                { cell: game.name },
-                                { cell: game.category },
-                                { cell: game.action },
+                                {cell: index, extraClass: styles.alignLeft},
+                                {cell: game.name},
+                                {cell: game.category},
+                                {cell: game.action},
                             ]}
                         />
                     ))}
