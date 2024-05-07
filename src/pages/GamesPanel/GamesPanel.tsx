@@ -5,6 +5,7 @@ import {PaginationButtons, Row, Table, Tbody, Thead} from '@/components';
 import {IGameData} from '@interfaces';
 import {gamesData} from '@data';
 import {useState} from 'react';
+import {NavLink} from 'react-router-dom';
 
 type Games = {
     data: IGameData[]
@@ -38,17 +39,15 @@ const GamesPanel = () => {
     return (
         <div className={styles.panel}>
 
-            <BeforeTable title="Игры" search={(value) => console.log(value)}/>
+            <BeforeTable title='Игры' search={(value) => console.log(value)}/>
 
             <Table>
                 <Thead row={[
                     {
                         cell: '№',
-                        extraClass: styles.alignLeft,
                     },
                     {
                         cell: 'Название',
-                        extraClass: styles.alignLeft,
                     },
                     {cell: 'Категория'},
                     {cell: 'Действие'},
@@ -59,11 +58,10 @@ const GamesPanel = () => {
                         <Row
                             key={index}
                             row={[
-
-                                {cell: index, extraClass: styles.alignLeft},
+                                {cell: index + 1},
                                 {cell: game.name},
                                 {cell: game.category},
-                                {cell: game.action},
+                                {cell: (<NavLink className={styles.link} to={`/games/${game.id}`}>Изминить</NavLink>)},
                             ]}
                         />
                     ))}
@@ -83,7 +81,6 @@ const GamesPanel = () => {
                         </td>
                     </tr>
                 </tfoot>
-
             </Table>
         </div>
     );
