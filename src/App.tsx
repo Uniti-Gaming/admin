@@ -12,7 +12,7 @@ import {
     EditCard,
     EditAccountOperator,
     PromoGenerator,
-    GamesPanel,
+    GamesPanel, CreateAccountOperator,
 } from '@pages';
 
 import styles from './App.module.scss';
@@ -44,6 +44,11 @@ function App() {
                     <Route path='/editaccountoperator' element={<EditAccountOperator />} />
 
                     <Route path='/generatepromo' element={<PromoGenerator />} />
+
+
+                    <Route path='/createaccountoperator' element={<CreateAccountOperator />} />
+
+
                 </Routes>
 
             </main>

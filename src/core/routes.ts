@@ -39,4 +39,8 @@ export const routes = [
         path: '/generatepromo',
         name: 'Промокоды',
     },
+    {
+        path: '/createaccountoperator',
+        name: 'test',
+    },
 ];

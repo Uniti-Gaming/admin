@@ -10,3 +10,6 @@ export { default as EditAccountOperator} from './EditAccountOperator/EditAccount
 export { default as PromoGenerator} from './PromoGenerator/PromoGenerator';
 export { default as GamesPanel } from './GamesPanel/GamesPanel';
 
+
+export { default as CreateAccountOperator } from './CreateAccountOperator/CreateAccountOperator';
+
