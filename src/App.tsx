@@ -16,6 +16,7 @@ import {
 } from '@pages';
 
 import styles from './App.module.scss';
+import Operators from '@/pages/Operators/Operators.tsx';
 
 function App() {
     return (
@@ -45,9 +46,9 @@ function App() {
 
                     <Route path='/generatepromo' element={<PromoGenerator />} />
 
-
                     <Route path='/createaccountoperator' element={<CreateAccountOperator />} />
 
+                    <Route path='/operators' element={<Operators />} />
 
                 </Routes>
 

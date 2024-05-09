@@ -43,4 +43,8 @@ export const routes = [
         path: '/createaccountoperator',
         name: 'test',
     },
+    {
+        path: '/operators',
+        name: 'Операторы',
+    },
 ];
