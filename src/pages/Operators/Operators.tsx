@@ -39,7 +39,7 @@ const Operators = () => {
         <div className={styles.panel}>
 
             {/* eslint-disable-next-line no-console */}
-            <BeforeTable title="Операторы" search={(value) => console.log(value)}/>
+            <BeforeTable title='Операторы' search={(value) => console.log(value)}/>
 
             <Table>
                 <Thead row={[
@@ -65,7 +65,7 @@ const Operators = () => {
                                 {cell: operator.phone},
                                 {
                                     cell: (<NavLink className={styles.link}
-                                       to={`/operator/${operator.ID}`}>Изминить</NavLink>),
+                                                    to={`/operator/${operator.ID}`}>Изминить</NavLink>),
                                 },
                             ]}
                         />
@@ -74,9 +74,14 @@ const Operators = () => {
 
                 <tfoot>
                     <tr>
+                        <td className={styles.buttonRow} colSpan={5}>
+                            <button type='button' className={styles.button}>Добавитить оператора</button>
+                        </td>
+                    </tr>
+                    <tr>
                         <td className={styles.counter} colSpan={3}>
                             Показывает {operators.page} страницу {operators.data.length} из {operatorsData
-                                .length} пунктов
+                            .length} пунктов
                         </td>
                         <td className={styles.pagination} colSpan={3}>
                             <PaginationButtons

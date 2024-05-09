@@ -29,4 +29,8 @@ td.blocked {
   text-decoration: none;
 }
 
+.button {
+  @include button($primary-color);
+}
+
 
