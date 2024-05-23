@@ -17,6 +17,7 @@ import {
 
 import styles from './App.module.scss';
 import Operators from '@/pages/Operators/Operators.tsx';
+import Plans from '@/pages/Plans/Plans.tsx';
 
 function App() {
     return (
@@ -31,6 +32,7 @@ function App() {
                     <Route path='/users/:id' element={<User />} />
 
                     <Route path='/games' element={<GamesPanel />} />
+
 
                     <Route path='/exchange-rates' element={<ExchangeRates />} />
 
@@ -49,6 +51,8 @@ function App() {
                     <Route path='/createaccountoperator' element={<CreateAccountOperator />} />
 
                     <Route path='/operators' element={<Operators />} />
+
+                    <Route path='/plans' element={<Plans />} />
 
                 </Routes>
 
