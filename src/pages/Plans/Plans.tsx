@@ -25,7 +25,6 @@ const Plans = () => {
      * @param {number} page - The new page number
      * @return {void}
      */
-
     const handlePageChange = (page: number) => {
         const start = (page - 1) * 12;
         const end = start + 12;
