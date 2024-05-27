@@ -4,7 +4,6 @@ import {PaginationButtons, Row, Table, Tbody, Thead} from '@components';
 import {IPromo} from '@interfaces';
 import {useState} from 'react';
 import {operatorsData, promosData} from '@data';
-import classNames from 'classnames';
 
 type Promos = {
     data: IPromo[],
@@ -41,7 +40,7 @@ const PromoList = () => {
             <BeforeTable title='Список промокодов'
                 children={
                     <button type='button'
-                        className={classNames(styles.button, styles.headerButton)}>Cгенерировать</button>
+                        className={styles.button}>Cгенерировать</button>
                 }
     
                 search={(value) => console.log(value)}

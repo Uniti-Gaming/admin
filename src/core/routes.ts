@@ -51,4 +51,8 @@ export const routes = [
         path: '/plans',
         name: 'Тарифы',
     },
+    {
+        path: '/logs',
+        name: 'Логи',
+    },
 ];

@@ -21,6 +21,7 @@ import {
 
 import styles from './App.module.scss';
 import PromoList from '@/pages/PromoList/PromoList.tsx';
+import Logs from '@/pages/Logs/Logs.tsx';
 
 function App() {
     return (
@@ -57,6 +58,8 @@ function App() {
                     <Route path='/plans' element={<Plans />} />
 
                     <Route path='/promolist' element={<PromoList />} />
+
+                    <Route path='/logs' element={<Logs />} />
 
                 </Routes>
 

@@ -12,6 +12,7 @@ export { default as GamesPanel } from './GamesPanel/GamesPanel';
 export { default as Plans } from './Plans/Plans';
 export { default as Operators } from './Operators/Operators';
 export { default as PromoList} from './PromoList/PromoList';
+export { default as Logs} from './Logs/Logs';
 
 export { default as CreateAccountOperator } from './CreateAccountOperator/CreateAccountOperator';
 
