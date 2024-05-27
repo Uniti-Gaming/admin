@@ -1,4 +1,4 @@
-export interface IPlans {
+export interface IPlan {
     name: string,
     type: string,
     price: number,

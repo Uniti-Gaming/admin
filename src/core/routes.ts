@@ -36,7 +36,7 @@ export const routes = [
         name: 'Редактировать аккаунт оператора',
     },
     {
-        path: '/generatepromo',
+        path: '/promolist',
         name: 'Промокоды',
     },
     {
@@ -50,9 +50,5 @@ export const routes = [
     {
         path: '/plans',
         name: 'Тарифы',
-    },
-    {
-        path: '/logs',
-        name: 'Логи',
     },
 ];

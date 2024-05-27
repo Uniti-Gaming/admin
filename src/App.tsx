@@ -16,11 +16,11 @@ import {
     CreateAccountOperator,
     Operators,
     Plans,
-    Logs,
 
 } from '@pages';
 
 import styles from './App.module.scss';
+import PromoList from '@/pages/PromoList/PromoList.tsx';
 
 function App() {
     return (
@@ -56,7 +56,7 @@ function App() {
 
                     <Route path='/plans' element={<Plans />} />
 
-                    <Route path='/logs' element={<Logs />} />
+                    <Route path='/promolist' element={<PromoList />} />
 
                 </Routes>
 
