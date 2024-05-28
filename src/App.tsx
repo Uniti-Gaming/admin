@@ -15,7 +15,7 @@ import {
     GamesPanel,
     CreateAccountOperator,
     Operators,
-    Plans,
+    Plans, Products,
 
 } from '@pages';
 
@@ -60,6 +60,9 @@ function App() {
                     <Route path='/promolist' element={<PromoList />} />
 
                     <Route path='/logs' element={<Logs />} />
+
+                    <Route path='/products' element={<Products />} />
+
 
                 </Routes>
 

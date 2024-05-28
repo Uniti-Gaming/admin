@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+}
+
+.searchBox {
+  margin-left: auto;
+}
+
+.panel {
+  @include panel;
+  width: 100%;
+}
+
+.counter {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: $inactive-text-color;
+  padding: 70px 20px 40px;
+}
+
+.pagination {
+  text-align: end;
+  padding: 15px 45px 0 0;
+}
+
+.button {
+  @include button($primary-color);
+  text-transform: uppercase;
+  margin-left: 50px;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.link {
+  color: #9F2EC7;
+  text-decoration: none;
+}
+
+

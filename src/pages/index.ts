@@ -13,6 +13,7 @@ export { default as Plans } from './Plans/Plans';
 export { default as Operators } from './Operators/Operators';
 export { default as PromoList} from './PromoList/PromoList';
 export { default as Logs} from './Logs/Logs';
+export { default as Products} from './Products/Products';
 
 export { default as CreateAccountOperator } from './CreateAccountOperator/CreateAccountOperator';
 
