@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Менгли Абдурахманова",
+    "ID": "UG-01-oper",
+    "mail": "m.abdurahmanova@unite-gaming.com",
+    "phone": "+993 (62) 39-57-37",
+    "action": "Изменить"
+  },
+  {
+    "name": "Дмитрий Корчагин",
+    "ID": "UG-02-oper",
+    "mail": "d.korchagin@unite-gaming.com",
+    "phone": "+993 (62) 39-57-37",
+    "action": "Изменить"
+  },
+  {
+    "name": "Менгли Абдурахманова",
+    "ID": "UG-03-oper",
+    "mail": "m.abdurahmanova@unite-gaming.com",
+    "phone": "+993 (62) 39-57-37",
+    "action": "Изменить"
+  }
+]

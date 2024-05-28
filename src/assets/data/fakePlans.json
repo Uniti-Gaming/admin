@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Герой",
+    "type": "1 месяц",
+    "price": 20,
+    "discount": 0,
+    "action": "Изменить"
+  },
+  {
+    "name": "Герой",
+    "type": "3 месяца",
+    "price": 60,
+    "discount": 15,
+    "action": "Изменить"
+  },
+  {
+    "name": "Герой",
+    "type": "6 месяцев",
+    "price": 120,
+    "discount": 25,
+    "action": "Изменить"
+  },
+  {
+    "name": "Властелин",
+    "type": "1 месяцев",
+    "price": 20,
+    "discount": 0,
+    "action": "Изменить"
+  },
+  {
+    "name": "Властелин",
+    "type": "3 месяца",
+    "price": 60,
+    "discount": 15,
+    "action": "Изменить"
+  },
+  {
+    "name": "Властелин",
+    "type": "6 месяцев",
+    "price": 120,
+    "discount": 25,
+    "action": "Изменить"
+  },
+  {
+    "name": "Титан",
+    "type": "1 месяцев",
+    "price": 20,
+    "discount": 0,
+    "action": "Изменить"
+  },
+  {
+    "name": "Титан",
+    "type": "3 месяца",
+    "price": 60,
+    "discount": 15,
+    "action": "Изменить"
+  },
+  {
+    "name": "Титан",
+    "type": "6 месяцев",
+    "price": 120,
+    "discount": 25,
+    "action": "Изменить"
+  },
+  {
+    "name": "Хранитель",
+    "type": "1 месяцев",
+    "price": 20,
+    "discount": 0,
+    "action": "Изменить"
+  },
+  {
+    "name": "Хранитель",
+    "type": "3 месяца",
+    "price": 60,
+    "discount": 15,
+    "action": "Изменить"
+  },
+  {
+    "name": "Хранитель",
+    "type": "6 месяцев",
+    "price": 120,
+    "discount": 25,
+    "action": "Изменить"
+  }
+]

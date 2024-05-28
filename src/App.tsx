@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 
-import {Aside, Header, Table} from '@components';
+import {Aside, Header} from '@components';
 import {
     User,
     Users,
@@ -12,9 +12,16 @@ import {
     EditCard,
     EditAccountOperator,
     PromoGenerator,
+    GamesPanel,
+    CreateAccountOperator,
+    Operators,
+    Plans,
+
 } from '@pages';
 
 import styles from './App.module.scss';
+import PromoList from '@/pages/PromoList/PromoList.tsx';
+import Logs from '@/pages/Logs/Logs.tsx';
 
 function App() {
     return (
@@ -28,7 +35,7 @@ function App() {
                     <Route path='/users' element={<Users />} />
                     <Route path='/users/:id' element={<User />} />
 
-                    <Route path='/games' element={<Table />} />
+                    <Route path='/games' element={<GamesPanel />} />
 
                     <Route path='/exchange-rates' element={<ExchangeRates />} />
 
@@ -43,6 +50,17 @@ function App() {
                     <Route path='/editaccountoperator' element={<EditAccountOperator />} />
 
                     <Route path='/generatepromo' element={<PromoGenerator />} />
+
+                    <Route path='/createaccountoperator' element={<CreateAccountOperator />} />
+
+                    <Route path='/operators' element={<Operators />} />
+
+                    <Route path='/plans' element={<Plans />} />
+
+                    <Route path='/promolist' element={<PromoList />} />
+
+                    <Route path='/logs' element={<Logs />} />
+
                 </Routes>
 
             </main>

@@ -36,7 +36,23 @@ export const routes = [
         name: 'Редактировать аккаунт оператора',
     },
     {
-        path: '/generatepromo',
+        path: '/promolist',
         name: 'Промокоды',
+    },
+    {
+        path: '/createaccountoperator',
+        name: 'test',
+    },
+    {
+        path: '/operators',
+        name: 'Операторы',
+    },
+    {
+        path: '/plans',
+        name: 'Тарифы',
+    },
+    {
+        path: '/logs',
+        name: 'Логи',
     },
 ];

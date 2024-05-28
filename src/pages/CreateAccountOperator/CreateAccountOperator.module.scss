@@ -1,0 +1,53 @@
+.createAccountOperator {
+  @include panel;
+
+  width: 100%;
+  padding: 0 16px;
+}
+
+.label {
+  @include label;
+  margin-bottom: 10px;
+}
+
+.input {
+  @include input;
+  margin-bottom: 10px;
+}
+
+.button {
+  @include button($additional-panel-bg-color);
+
+  &:last-of-type {
+    margin-left: 6px;
+  }
+}
+
+.footer {
+  @include footer;
+}
+
+.save {
+  background-color: $primary-color;
+  margin-left: 6px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 150px auto;
+  grid-template-rows: repeat(5, 50px);
+  align-items: center;
+  margin-top: 36px;
+  margin-bottom: 50px;
+}
+
+.short {
+  width: 220px;
+}
+
+.showPass {
+  position: relative;
+  top: 5px;
+  left: -40px;
+
+}
