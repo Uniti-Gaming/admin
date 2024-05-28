@@ -40,15 +40,15 @@ const Plans = () => {
         <div className={styles.panel}>
 
             {/* eslint-disable-next-line no-console */}
-            <BeforeTable title='Тарифы' search={(value) => console.log(value)}/>
+            <BeforeTable title='Список тарифов'/>
 
             <Table>
                 <Thead row={[
                     {
-                        cell: 'Название',
+                        cell: 'Название', extraClass: styles.alignLeft,
                     },
                     {
-                        cell: 'Тип',
+                        cell: 'Тип', extraClass: styles.alignLeft,
                     },
                     {cell: 'Стоимость'},
                     {cell: 'Скидка'},
@@ -60,10 +60,10 @@ const Plans = () => {
                         <Row
                             key={index}
                             row={[
-                                {cell: plans.name},
-                                {cell: plans.type},
-                                {cell: plans.price},
-                                {cell: plans.discount},
+                                {cell: plans.name, extraClass: styles.alignLeft},
+                                {cell: plans.type, extraClass: styles.alignLeft},
+                                {cell: plans.price + ' ман'},
+                                {cell: plans.discount + ' %'},
                                 {
                                     cell: (<NavLink className={styles.link} 
                                         to={`/operator/${plans.name}`}>Изминить</NavLink>),
