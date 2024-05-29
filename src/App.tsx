@@ -15,8 +15,8 @@ import {
     GamesPanel,
     CreateAccountOperator,
     Operators,
-    Plans, Products,
-
+    Plans,
+    Products,
 } from '@pages';
 
 import styles from './App.module.scss';
@@ -62,7 +62,6 @@ function App() {
                     <Route path='/logs' element={<Logs />} />
 
                     <Route path='/products' element={<Products />} />
-
 
                 </Routes>
 

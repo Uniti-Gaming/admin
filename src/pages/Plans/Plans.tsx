@@ -39,7 +39,6 @@ const Plans = () => {
     return (
         <div className={styles.panel}>
 
-            {/* eslint-disable-next-line no-console */}
             <BeforeTable title='Список тарифов'/>
 
             <Table>
