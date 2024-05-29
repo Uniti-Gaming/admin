@@ -1,3 +1,11 @@
+.header {
+  display: flex;
+}
+
+.searchBox {
+  margin-left: auto;
+}
+
 .panel {
   @include panel;
   width: 100%;
@@ -16,12 +24,14 @@
   padding: 15px 45px 0 0;
 }
 
-td.active {
-  color: $active-account-tip-color;
+.button {
+  @include button($primary-color);
+  text-transform: uppercase;
+  margin-left: 50px;
 }
 
-td.blocked {
-  color: $block-account-tip-color;
+.alignLeft {
+  text-align: left;
 }
 
 .link {
@@ -29,10 +39,4 @@ td.blocked {
   text-decoration: none;
 }
 
-.button {
-  @include button($primary-color);
-}
 
-.alignLeft {
-  text-align: left;
-}

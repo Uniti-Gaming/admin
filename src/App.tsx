@@ -16,7 +16,7 @@ import {
     CreateAccountOperator,
     Operators,
     Plans,
-
+    Products,
 } from '@pages';
 
 import styles from './App.module.scss';
@@ -60,6 +60,8 @@ function App() {
                     <Route path='/promolist' element={<PromoList />} />
 
                     <Route path='/logs' element={<Logs />} />
+
+                    <Route path='/products' element={<Products />} />
 
                 </Routes>
 
