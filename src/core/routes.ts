@@ -55,4 +55,8 @@ export const routes = [
         path: '/logs',
         name: 'Логи',
     },
+    {
+        path: '/products',
+        name: 'test2',
+    },
 ];
